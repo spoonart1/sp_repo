@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_rounded_dialog"
+    android:orientation="vertical"
+    >
+
+  <FrameLayout
+      android:id="@+id/fl_button"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:visibility="gone"
+      >
+
+    <com.mikepenz.iconics.view.IconicsTextView
+        android:id="@+id/btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/padding_size_small"
+        android:layout_marginTop="@dimen/padding_size_small"
+        android:background="@drawable/button_white"
+        android:gravity="center"
+        android:padding="@dimen/padding_size_tiny"
+        android:text="{gmd-close}"
+        android:textSize="@dimen/big_text_size"
+        />
+
+  </FrameLayout>
+
+  <TextView
+      android:id="@+id/title"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/padding_size_medium"
+      android:gravity="center"
+      android:text="Tahukah Anda?"
+      android:textSize="@dimen/big_text_size_2"
+      />
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/line_divider_size"
+      android:background="@color/grey_200"
+      />
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:fillViewport="true"
+      >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="true"
+        android:orientation="vertical"
+        >
+
+      <LinearLayout
+          android:id="@+id/ll_content"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:gravity="center_horizontal"
+          android:orientation="vertical"
+          />
+
+      <LinearLayout
+          android:id="@+id/ll_footer_button"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/ds_action_bar_size"
+          android:gravity="center"
+          android:orientation="horizontal"
+          android:background="@color/transparant"
+          >
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/actionBarItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textAllCaps="true"
+            android:textColor="@color/green_dompet_ori"
+            />
+
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/actionBarItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/next"
+            android:textAllCaps="true"
+            android:textColor="@color/green_dompet_ori"
+            />
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+  </ScrollView>
+
+</LinearLayout>

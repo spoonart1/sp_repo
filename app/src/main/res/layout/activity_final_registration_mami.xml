@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+  <include layout="@layout/simple_small_action_bar_manulife_template"/>
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/line_divider_size"
+      android:background="@color/grey_200"
+      />
+
+  <ViewFlipper
+      android:id="@+id/viewflipper"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:padding="@dimen/padding_size_high"
+      >
+
+    <include layout="@layout/flipper_final_registration_mami_1"/>
+    <include layout="@layout/flipper_final_registration_mami_2"/>
+
+  </ViewFlipper>
+
+
+</LinearLayout>

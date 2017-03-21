@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+  <include layout="@layout/simple_small_action_bar_back_and_single_menu"/>
+
+  <android.support.design.widget.CoordinatorLayout
+      android:id="@+id/main_content"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/white"
+      >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:elevation="0dp"
+        >
+
+      <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@color/blue_traveloka"
+          android:orientation="vertical"
+          android:paddingLeft="@dimen/padding_root_layout"
+          android:paddingRight="@dimen/padding_root_layout"
+          android:paddingBottom="@dimen/padding_root_layout"
+          app:layout_scrollFlags="scroll|enterAlways|snap"
+          >
+
+        <TextView
+            android:layout_marginTop="@dimen/padding_size_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/finishing_plan_title"
+            android:textSize="@dimen/bigger_text_size"
+            />
+
+        <TextView
+            android:id="@+id/tv_subheader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_size_small"
+            android:textColor="@color/white"
+            android:lineSpacingExtra="@dimen/padding_size_micro"
+            android:text="@string/finishing_plan_subtitle"
+            />
+
+      </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          app:layout_behavior="@string/appbar_scrolling_view_behavior"
+          >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_divider_size"
+            android:background="@color/grey_200"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            />
+
+      </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+  </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

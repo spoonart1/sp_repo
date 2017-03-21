@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey_200"
+    >
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginTop="@dimen/padding_size_high"
+      android:layout_marginBottom="@dimen/padding_size_high"
+      android:paddingLeft="@dimen/padding_size_high"
+      android:paddingRight="@dimen/padding_size_high"
+      >
+
+    <EditText
+        android:id="@+id/et_search_category"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:layout_weight="1"
+        android:maxLines="1"
+        android:textSize="@dimen/normal_text_size"
+        android:hint="@string/search_category"
+        />
+
+    <com.mikepenz.iconics.view.IconicsTextView
+        android:id="@+id/ic_search"
+        android:text="{dsf-search}"
+        android:enabled="false"
+        android:textColor="@color/text_state_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/huge_text_size"
+        android:clickable="true"
+        android:background="?attr/actionBarItemBackground"
+        />
+
+  </LinearLayout>
+
+  <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/white"
+      >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layoutAnimation="@anim/layout_anim_fade_in"
+        />
+
+    <com.mikepenz.iconics.view.IconicsButton
+        android:id="@+id/add"
+        android:layout_gravity="bottom|right"
+        android:text="{dsf-plus}"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/circle_icon_text_size"
+        android:layout_width="@dimen/ds_action_bar_size"
+        android:layout_height="@dimen/ds_action_bar_size"
+        android:layout_margin="@dimen/padding_size_high"
+        android:background="@drawable/button_oval_add_item"
+        android:elevation="@dimen/high_elevation"
+        />
+
+  </FrameLayout>
+
+</LinearLayout>

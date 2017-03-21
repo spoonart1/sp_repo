@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/simple_small_action_bar_only_back"/>
+
+    <LinearLayout
+        android:id="@+id/ll_referral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_divider_size"
+            android:background="@color/grey_200"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_size_high"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/big_text_size"
+                android:text="@string/switch_referral_only_text"
+                />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/sw_referral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_size_high"
+            android:layout_marginRight="@dimen/padding_size_high"
+            android:textSize="@dimen/average_text_size"
+            android:text="@string/switch_referral_only_subtext"
+            android:textColor="@color/grey_600"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_divider"
+        android:layout_marginTop="@dimen/padding_size_small"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_divider_size"
+        android:background="@color/grey_200"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_both"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_size_high"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/big_text_size"
+                android:layout_weight="1"
+                android:text="@string/switch_referral_and_fin_text"
+                />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/sw_both"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/average_text_size"
+            android:layout_marginLeft="@dimen/padding_size_high"
+            android:layout_marginRight="@dimen/padding_size_high"
+            android:text="@string/switch_referral_and_fin_subtext"
+            android:textColor="@color/grey_600"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

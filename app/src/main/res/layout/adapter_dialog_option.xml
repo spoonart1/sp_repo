@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/padding_size_small"
+    android:paddingLeft="@dimen/padding_size_medium"
+    android:paddingRight="@dimen/padding_size_medium"
+    android:paddingTop="@dimen/padding_size_small"
+    >
+
+  <com.mikepenz.iconics.view.IconicsTextView
+      android:id="@+id/checkbox"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="{cmd-checkbox-blank-circle-outline}"
+      android:textSize="@dimen/big_text_size"
+      />
+
+  <TextView
+      android:id="@+id/tv_label"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="@dimen/padding_size_small"
+      android:layout_weight="1"
+      android:text="Label"
+      />
+
+</LinearLayout>

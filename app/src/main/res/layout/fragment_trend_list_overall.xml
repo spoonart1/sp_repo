@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+  <android.support.v4.widget.SwipeRefreshLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+      <FrameLayout
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/chart_line_height"
+          android:elevation="1dp"
+          android:background="@color/white"
+          >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:tint="@color/grey_300"
+            android:src="@drawable/grid"
+            />
+
+        <lecho.lib.hellocharts.view.LineChartView
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+      </FrameLayout>
+
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/indicator_data"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="@dimen/padding_size_high"
+          />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="horizontal"
+          >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:padding="@dimen/padding_size_small"
+              android:text="@string/balances"
+              android:textColor="@color/grey_500"
+              android:textSize="@dimen/average_text_size"
+              />
+
+          <TextView
+              android:id="@+id/tv_trend_balance"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Rp 10"
+              />
+
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/padding_root_layout"
+              />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:padding="@dimen/padding_size_small"
+              android:text="@string/transactions"
+              android:textColor="@color/grey_500"
+              android:textSize="@dimen/average_text_size"
+              />
+
+          <TextView
+              android:id="@+id/tv_trend_transaction"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="16 Transaksi"
+              />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:padding="@dimen/padding_size_small"
+              android:text="@string/total_income"
+              android:textColor="@color/grey_500"
+              android:textSize="@dimen/average_text_size"
+              />
+
+          <TextView
+              android:id="@+id/tv_trend_income"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Rp 10"
+              />
+
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/padding_root_layout"
+              />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:padding="@dimen/padding_size_small"
+              android:text="@string/total_category"
+              android:textColor="@color/grey_500"
+              android:textSize="@dimen/average_text_size"
+              />
+
+          <TextView
+              android:id="@+id/tv_trend_category"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="16 Transaksi"
+              />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:padding="@dimen/padding_size_small"
+              android:gravity="center"
+              android:text="@string/total_expense"
+              android:textColor="@color/grey_500"
+              android:textSize="@dimen/average_text_size"
+              />
+
+          <TextView
+              android:id="@+id/tv_trend_expense"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Rp 10"
+              />
+
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/padding_root_layout"
+              />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:gravity="bottom|center"
+              android:padding="@dimen/padding_size_small"
+              android:text="AVG daily expense"
+              android:textColor="@color/grey_500"
+              android:textSize="@dimen/average_text_size"
+              android:id="@+id/textView6"
+              />
+
+          <TextView
+              android:id="@+id/tv_trend_avg_transaction"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="16 Transaksi"
+              />
+
+        </LinearLayout>
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+  </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

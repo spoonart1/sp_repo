@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="@dimen/padding_size_medium">
+    <javasign.com.dompetsehat.utils.IconCategoryRounded
+        android:id="@+id/icr_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:ic_view_size="55"
+        app:ic_color="@color/blue"/>
+    <TextView
+        android:id="@+id/tv_categori_name"
+        android:layout_weight="1"
+        android:padding="@dimen/padding_size_small"
+        android:text="Uncategorized"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_total"
+        android:layout_weight="1"
+        android:text="Rp 0"
+        android:gravity="center_vertical|right"
+        android:padding="@dimen/padding_size_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/high_elevation"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/normal_elevation"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_size_medium"
+            >
+            <TextView
+                android:text="@string/ending_reksadana"
+                android:gravity="center"
+                android:textSize="@dimen/big_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_size_medium"
+                />
+
+            <ImageView
+                android:layout_marginTop="-40dp"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:padding="@dimen/padding_size_small"
+                android:src="@drawable/happy"/>
+
+            <TextView
+                android:gravity="center"
+                android:padding="@dimen/padding_size_medium"
+                android:text="@string/manulife_will_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

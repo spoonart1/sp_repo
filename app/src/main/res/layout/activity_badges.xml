@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+  <include layout="@layout/simple_small_action_bar_only_back"/>
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/line_divider_size"
+      android:background="@color/grey_200"
+      />
+
+  <ListView
+      android:id="@+id/lv_bagdes"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      />
+
+</LinearLayout>

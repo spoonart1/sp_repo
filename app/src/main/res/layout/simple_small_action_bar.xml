@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tab_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:elevation="@dimen/normal_elevation"
+    android:orientation="vertical"
+    >
+
+  <ImageView
+      android:id="@+id/iv_logo"
+      android:layout_width="120dp"
+      android:layout_height="@dimen/ds_action_bar_size"
+      android:layout_centerHorizontal="true"
+      android:layout_centerVertical="true"
+      android:src="@drawable/logo_ds_hitam_no_icon"
+      android:tint="@color/black"
+      />
+
+  <javasign.com.dompetsehat.view.CustomSpinner
+      android:id="@+id/spinner"
+      android:layout_width="wrap_content"
+      android:layout_height="@dimen/ds_action_bar_size"
+      android:layout_centerVertical="true"
+      android:layout_marginLeft="@dimen/padding_size_medium"
+      android:layout_toRightOf="@+id/iv_user_pict"
+      android:background="@null"
+      android:visibility="visible"
+      />
+
+  <TextView
+      android:id="@+id/tv_title"
+      android:layout_width="wrap_content"
+      android:layout_height="@dimen/ds_action_bar_size"
+      android:layout_centerHorizontal="true"
+      android:gravity="center"
+      android:text="Timeline"
+      android:textColor="@color/black"
+      android:textSize="@dimen/big_text_size_2"
+      android:visibility="gone"
+      />
+
+  <com.makeramen.roundedimageview.RoundedImageView
+      android:id="@+id/iv_user_pict"
+      android:layout_width="@dimen/ds_action_bar_size"
+      android:layout_height="@dimen/ds_action_bar_size"
+      android:background="?attr/actionBarItemBackground"
+      android:clickable="true"
+      android:src="@drawable/user_empty"
+      app:riv_oval="true"
+      />
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:orientation="horizontal"
+      >
+
+    <com.mikepenz.iconics.view.IconicsTextView
+        android:id="@+id/ic_search"
+        android:layout_width="@dimen/ds_action_bar_size"
+        android:layout_height="@dimen/ds_action_bar_size"
+        android:background="?attr/actionBarItemBackground"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="{dsf-search}"
+        android:textSize="@dimen/huge_text_size"
+        />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+      <com.mikepenz.iconics.view.IconicsTextView
+          android:id="@+id/ic_menu"
+          android:layout_width="@dimen/ds_action_bar_size"
+          android:layout_height="@dimen/ds_action_bar_size"
+          android:background="?attr/actionBarItemBackground"
+          android:clickable="true"
+          android:gravity="center"
+          android:text="{dsf-plus}"
+          android:textSize="@dimen/huge_text_size"
+          />
+
+      <TextView
+          android:id="@+id/ic_notif"
+          android:layout_width="wrap_content"
+          android:layout_height="18dp"
+          android:layout_gravity="right"
+          android:layout_marginRight="4dp"
+          android:layout_marginTop="4dp"
+          android:background="@drawable/shape_oval_red"
+          android:gravity="center"
+          android:minHeight="18dp"
+          android:minWidth="18dp"
+          android:paddingLeft="2dp"
+          android:paddingRight="2dp"
+          android:text="1"
+          android:textColor="@color/white"
+          android:textSize="10dp"
+          android:visibility="gone"
+          />
+    </FrameLayout>
+
+  </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/padding_size_small"
+    android:paddingRight="@dimen/padding_size_small"
+    android:background="@color/green_600"
+    >
+
+  <TextView
+      android:id="@+id/text"
+      android:text="Kata sandi baru anda "
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:textColor="@color/white"
+      android:ellipsize="end"/>
+
+  <Button
+      android:id="@+id/action"
+      android:text="TUTUP"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:visibility="visible"
+      android:textColor="@color/white"
+      style="?attr/borderlessButtonStyle"/>
+
+</LinearLayout>

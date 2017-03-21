@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/padding_size_high"
+    android:paddingRight="@dimen/padding_size_high"
+    android:paddingTop="@dimen/padding_size_high"
+    >
+
+  <TextView
+      android:id="@+id/tv_title"
+      android:text="SYSTEM"
+      android:textSize="@dimen/average_text_size"
+      android:textColor="@color/green_dompet_ori"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      />
+
+</LinearLayout>

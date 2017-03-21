@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_green_dompet"
+    android:orientation="horizontal"
+    >
+  <com.mikepenz.iconics.view.IconicsTextView
+      android:id="@+id/itv_icon"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:paddingBottom="@dimen/padding_size_tiny"
+      android:paddingLeft="@dimen/padding_size_medium"
+      android:paddingRight="@dimen/padding_size_medium"
+      android:paddingTop="@dimen/padding_size_tiny"
+      android:textColor="@color/white"
+      android:textSize="@dimen/big_text_size"
+      />
+  <TextView
+      android:id="@+id/tv_label"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/padding_size_small"
+      android:text="Bug"
+      android:textColor="@color/white"
+      />
+</LinearLayout>

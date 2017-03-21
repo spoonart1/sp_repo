@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+  <include
+      layout="@layout/simple_small_action_bar_with_title_no_logo"
+      android:id="@+id/ds_bar"
+      />
+
+  <View
+      android:id="@+id/horizontal_divider"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/line_divider_size"
+      android:layout_below="@id/ds_bar"
+      android:background="@color/grey_200"
+      />
+  <RelativeLayout
+      android:id="@+id/header"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/horizontal_divider"
+      >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_100"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_size_high"
+        >
+
+      <FrameLayout
+          android:id="@+id/fl_background"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          >
+
+        <javasign.com.dompetsehat.utils.CircleShapeView
+            android:id="@+id/cv_background"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:transitionName="@string/category"
+            />
+
+        <com.mikepenz.iconics.view.IconicsTextView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white_text_light"
+            android:textSize="@dimen/circle_icon_text_size"
+            />
+
+      </FrameLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          >
+
+        <TextView
+            android:id="@+id/tv_vendor_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_size_high"
+            android:text="My Bank"
+            android:textSize="@dimen/bigger_text_size"
+            />
+
+        <TextView
+            android:id="@+id/tv_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_size_high"
+            android:layout_marginTop="@dimen/padding_size_tiny"
+            android:text="Rp 0"
+            android:textColor="@color/grey_600"
+            android:textSize="@dimen/big_text_size"
+            />
+
+      </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/padding_size_small"
+        >
+      <ImageView
+          android:id="@+id/button_refresh"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:padding="@dimen/padding_size_small"
+          android:src="@drawable/ic_refresh_white_24dp"
+          android:visibility="gone"
+          />
+    </LinearLayout>
+  </RelativeLayout>
+  <FrameLayout
+      android:id="@+id/rootview"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@id/header"
+      app:layout_behavior="@string/appbar_scrolling_view_behavior"
+      >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/recycleview"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          />
+
+      <LinearLayout
+          android:id="@+id/ll_content"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="@dimen/padding_root_layout_twice"
+          android:layout_weight="1"
+          android:gravity="center_horizontal|top"
+          android:orientation="vertical"
+          >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+          <TextView
+              android:id="@+id/tv_status"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerHorizontal="true"
+              android:padding="@dimen/padding_size_medium"
+              android:text="Sinkronisasi terakhir: 12 Bulan 2017, 19:00 WIB"
+              android:textColor="@color/grey_600"
+              android:textSize="@dimen/average_text_size"
+              />
+
+          <Button
+              android:id="@+id/btn_sync_info"
+              android:layout_below="@+id/tv_status"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/button_rounded_orange_send_stroked"
+              android:text="@string/wait_sometime"
+              android:textAllCaps="false"
+              android:textColor="@color/white"
+              />
+
+          <Button
+              android:id="@+id/btn_sync_now"
+              android:layout_below="@id/tv_status"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/transparant"
+              android:padding="0dp"
+              />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_container"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            />
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/custom_blank_view"/>
+
+  </FrameLayout>
+
+  <TextView
+      android:id="@+id/footer_btn"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:background="@color/white"
+      android:gravity="center"
+      android:padding="@dimen/padding_size_high"
+      android:text="@string/need_old_transaction"
+      android:textColor="@color/blue_traveloka"
+      />
+
+  <View
+      android:id="@+id/splash_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:alpha="0"
+      android:background="@color/black"
+      android:visibility="gone"
+      />
+
+  <include layout="@layout/slide_up_sinknronisasi"/>
+
+</RelativeLayout>

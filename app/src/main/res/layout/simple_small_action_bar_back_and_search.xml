@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:elevation="@dimen/normal_elevation"
+    >
+
+  <com.mikepenz.iconics.view.IconicsTextView
+      android:id="@+id/ic_back"
+      android:layout_width="@dimen/ds_action_bar_size"
+      android:layout_height="@dimen/ds_action_bar_size"
+      android:clickable="true"
+      android:gravity="center"
+      android:text="{dsf-arrow-back}"
+      android:textSize="@dimen/huge_text_size"
+      android:background="?attr/actionBarItemBackground"
+      />
+
+  <TextView
+      android:id="@+id/tv_title"
+      android:layout_width="wrap_content"
+      android:layout_height="@dimen/ds_action_bar_size"
+      android:layout_centerHorizontal="true"
+      android:gravity="center"
+      android:text="@string/all_trends"
+      android:textColor="@color/black"
+      android:textSize="@dimen/big_text_size_2"
+      />
+
+  <com.mikepenz.iconics.view.IconicsTextView
+      android:id="@+id/ic_search"
+      android:layout_width="@dimen/ds_action_bar_size"
+      android:layout_height="@dimen/ds_action_bar_size"
+      android:layout_alignParentRight="true"
+      android:clickable="true"
+      android:gravity="center"
+      android:text="{dsf-search}"
+      android:textSize="@dimen/huge_text_size"
+      android:background="?attr/actionBarItemBackground"
+      />
+
+</RelativeLayout>

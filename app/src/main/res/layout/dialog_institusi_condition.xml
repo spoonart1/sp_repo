@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      >
+
+  <TextView
+      android:id="@+id/tv_title"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:padding="@dimen/padding_size_medium"
+      android:text="@string/title_condition_manulife_institution"
+      android:textSize="@dimen/big_text_size"
+      android:textStyle="bold"
+      />
+
+  <WebView
+      android:id="@+id/webview"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:scrollbars="vertical"
+      android:fadeScrollbars="false"
+      android:layout_weight="1"
+      />
+
+  <LinearLayout
+      android:id="@+id/ll_footer_button"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_divider_size"
+        android:background="@color/grey_400"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+      <Button
+          android:id="@+id/btn_disagree"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="Saya Tidak Setuju"
+          android:textSize="@dimen/average_text_size_DP"
+          android:textColor="@color/grey_600"
+          style="@style/Base.Widget.AppCompat.Button.Borderless"
+          />
+
+      <View
+          android:layout_width="@dimen/line_divider_size"
+          android:layout_height="match_parent"
+          android:background="@color/grey_400"
+          />
+
+      <Button
+          android:id="@+id/btn_agree"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="Saya Setuju"
+          android:textSize="@dimen/average_text_size_DP"
+          android:textColor="@color/green_manulife"
+          style="@style/Base.Widget.AppCompat.Button.Borderless"
+          />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_divider_size"
+        android:background="@color/grey_400"
+        />
+
+  </LinearLayout>
+
+</LinearLayout>
+</RelativeLayout>

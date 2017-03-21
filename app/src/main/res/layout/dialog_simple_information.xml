@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_rounded_white"
+    android:clipChildren="true"
+    android:orientation="vertical"
+    >
+
+  <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      >
+
+    <com.mikepenz.iconics.view.IconicsTextView
+        android:id="@+id/btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="{gmd-close}"
+        android:layout_gravity="right"
+        android:gravity="center"
+        android:textSize="@dimen/big_text_size"
+        android:background="@drawable/button_white"
+        android:padding="@dimen/padding_size_tiny"
+        android:layout_marginTop="@dimen/padding_size_small"
+        android:layout_marginRight="@dimen/padding_size_small"
+        />
+
+  </FrameLayout>
+
+  <TextView
+      android:id="@+id/title"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="@dimen/padding_size_medium"
+      android:layout_marginRight="@dimen/padding_size_medium"
+      android:gravity="center"
+      android:text="@string/did_you_know"
+      android:textSize="@dimen/big_text_size_2"
+      />
+
+  <!--<View
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/line_divider_size"
+      android:background="@color/grey_200"
+      />-->
+
+  <LinearLayout
+      android:id="@+id/ll_content"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:gravity="center_horizontal"
+      android:orientation="vertical"
+      android:layout_marginTop="@dimen/padding_size_medium"
+      android:paddingLeft="@dimen/padding_root_layout"
+      android:paddingRight="@dimen/padding_root_layout"
+      android:paddingBottom="@dimen/padding_root_layout"
+      >
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/padding_size_micro"
+        android:textColor="@color/grey_800"
+        android:text="@string/lorem_ipsum"
+        />
+
+  </LinearLayout>
+
+</LinearLayout>

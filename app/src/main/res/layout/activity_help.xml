@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+  <include layout="@layout/simple_small_action_bar_only_back"/>
+
+  <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:background="@color/grey_200"
+      >
+
+    <javasign.com.dompetsehat.view.UnSwapContentViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <com.mikepenz.iconics.view.IconicsButton
+        android:id="@+id/btn_chat"
+        android:layout_width="@dimen/ds_action_bar_size"
+        android:layout_height="@dimen/ds_action_bar_size"
+        android:layout_gravity="right|bottom"
+        android:layout_margin="@dimen/padding_size_medium"
+        android:textColor="@color/white"
+        android:text="{dsf-chat-bubble}"
+        android:textSize="@dimen/bigger_text_size"
+        android:visibility="gone"
+        android:background="@drawable/shape_oval_green_100"
+        android:elevation="@dimen/high_elevation"
+        />
+
+  </FrameLayout>
+
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/line_divider_size"
+      android:background="@color/grey_200"
+      />
+
+  <RadioGroup
+      android:id="@+id/radio_group"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      >
+
+    <RadioButton
+        android:id="@+id/rb_faqs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ds_action_bar_size"
+        android:layout_weight="1"
+        android:button="@null"
+        android:checked="true"
+        android:gravity="center"
+        android:text="@string/manual_book"
+        android:textColor="@color/rb_text_color_selector_grey"
+        />
+
+    <View
+        android:layout_width="@dimen/line_divider_size"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/padding_size_small"
+        android:layout_marginTop="@dimen/padding_size_small"
+        android:background="@color/grey_200"
+        />
+
+    <RadioButton
+        android:id="@+id/rb_link"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ds_action_bar_size"
+        android:layout_weight="1"
+        android:button="@null"
+        android:gravity="center"
+        android:text="@string/link"
+        android:textColor="@color/rb_text_color_selector_grey"
+        />
+
+    <View
+        android:layout_width="@dimen/line_divider_size"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/padding_size_small"
+        android:layout_marginTop="@dimen/padding_size_small"
+        android:background="@color/grey_200"
+        />
+
+    <RadioButton
+        android:id="@+id/rb_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ds_action_bar_size"
+        android:layout_weight="1"
+        android:button="@null"
+        android:gravity="center"
+        android:text="@string/feedback"
+        android:textColor="@color/rb_text_color_selector_grey"
+        />
+
+  </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:elevation="@dimen/normal_elevation"
+    >
+
+  <com.mikepenz.iconics.view.IconicsTextView
+      android:id="@+id/ic_back"
+      android:layout_width="@dimen/ds_action_bar_size"
+      android:layout_height="@dimen/ds_action_bar_size"
+      android:clickable="true"
+      android:gravity="center"
+      android:text="{dsf-arrow-back}"
+      android:textSize="@dimen/huge_text_size"
+      android:background="?attr/actionBarItemBackground"
+      />
+
+  <com.mikepenz.iconics.view.IconicsTextView
+      android:id="@+id/ic_menu"
+      android:layout_width="@dimen/ds_action_bar_size"
+      android:layout_height="@dimen/ds_action_bar_size"
+      android:layout_alignParentRight="true"
+      android:clickable="true"
+      android:gravity="center"
+      android:enabled="false"
+      android:text="{dsf-check}"
+      android:textSize="@dimen/huge_text_size"
+      android:textColor="@color/text_state_color_green"
+      android:background="?attr/actionBarItemBackground"
+      />
+
+  <Spinner
+      android:id="@+id/spinner"
+      android:layout_width="wrap_content"
+      android:layout_height="@dimen/ds_action_bar_size"
+      android:layout_centerHorizontal="true"
+      android:gravity="center"
+      />
+
+</RelativeLayout>

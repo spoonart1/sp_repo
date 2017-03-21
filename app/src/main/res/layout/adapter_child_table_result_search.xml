@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      >
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:gravity="center"
+        android:text="13/01/17"
+        android:layout_margin="@dimen/padding_size_small"
+        android:textColor="@color/grey_600"
+        />
+
+    <View
+        android:layout_width="@dimen/line_divider_size"
+        android:layout_height="match_parent"
+        android:background="@color/grey_400"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_transaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.22"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_size_small"
+        >
+
+      <TextView
+          android:id="@+id/tv_category"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="PENJUALAN"
+          android:textColor="@color/green_500"
+          />
+
+      <TextView
+          android:id="@+id/tv_desc"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/padding_size_tiny"
+          android:textSize="@dimen/average_text_size_DP"
+          android:text="@string/lorem_ipsum"
+          android:textColor="@color/grey_700"
+          />
+
+      <TextView
+          android:id="@+id/tv_hash_tag"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/padding_size_tiny"
+          android:text="#wesker"
+          android:textColor="@color/green_dompet_ori"
+          />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/line_divider_size"
+        android:layout_height="match_parent"
+        android:background="@color/grey_400"
+        />
+
+    <TextView
+        android:id="@+id/tv_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:text="Rp 35.000.000"
+        android:textSize="@dimen/average_text_size_DP"
+        android:layout_margin="@dimen/padding_size_small"
+        android:textColor="@color/green_500"
+        />
+
+  </LinearLayout>
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/line_divider_size"
+      android:background="@color/grey_300"
+      />
+
+</LinearLayout>

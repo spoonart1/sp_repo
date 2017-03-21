@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+  <ProgressBar
+      android:id="@+id/progressbar"
+      style="?android:attr/progressBarStyleSmall"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:progressTint="@color/white"
+      android:layout_marginTop="14dp"
+      android:layout_marginLeft="@dimen/padding_size_medium"
+      />
+      />
+  <include layout="@layout/simple_small_action_bar_only_back"/>
+  <FrameLayout
+      android:layout_marginTop="@dimen/ds_action_bar_size"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <Button
+        android:id="@+id/btn_more"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_size_high"
+        android:text="@string/see_more"
+        android:textColor="@color/white_text_light"
+        android:background="@drawable/button_orange_rounded"
+        />
+
+  </FrameLayout>
+
+</FrameLayout>

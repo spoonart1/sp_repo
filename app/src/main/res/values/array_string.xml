@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="title_tab_array_main_act">
+    <item>Timeline</item>
+    <item>Overview</item>
+  </string-array>
+  <string-array name="title_tab_array_add_transaction_act">
+    <item>Expense</item>
+    <item>Income</item>
+  </string-array>
+
+  <string-array name="action_bar_spinner">
+    <item>@string/all_transaction</item>
+    <item>@string/show_incomes_only</item>
+    <item>@string/show_expenses_only</item>
+  </string-array>
+
+  <string-array name="default_tags">
+    <item>needs</item>
+    <item>wants</item>
+    <item>family</item>
+    <item>work</item>
+  </string-array>
+  <string-array name="subjects">
+    <item>Bug</item>
+    <item>Feature</item>
+    <item>Information</item>
+  </string-array>
+  <string-array name="icon_subjects">
+    <item>{gmd-bug}</item>
+    <item>{gmd-star-circle}</item>
+    <item>{gmd-info-outline}</item>
+  </string-array>
+
+  <string-array name="drawer_titles">
+    <item>Home</item>
+    <item>Transactions</item>
+    <item>Budgets</item>
+    <item>Bills Reminder</item>
+    <item>Finplan</item>
+    <item>-</item>
+    <item>Feedback</item>
+    <item>Settings</item>
+  </string-array>
+  <string-array name="drawer_icon">
+    <item>{dsf-home}</item>
+    <item>{gmd-money-box}</item>
+    <item>{dsf-bills}</item>
+    <item>{dsf-reminder}</item>
+    <item>{gmd-shield-security}</item>
+    <item></item>
+    <item>{gmd-collection-text}</item>
+    <item>{gmd-settings}</item>
+  </string-array>
+
+  <string-array name="genders">
+    <item>Pria</item>
+    <item>Wanita</item>
+  </string-array>
+
+  <string-array name="color_array">
+    <item name="soft_green">#BED940</item>
+    <item name="purple_light">#E26BEB</item>
+    <item name="soft_yellow">#FFCC00</item>
+    <item name="blue_cyan">#60CFCB</item>
+    <item name="brown">#B47B55</item>
+    <item name="blue_navi">#3D75AB</item>
+    <item name="blue_water">#669DD6</item>
+    <item name="brown_light">#DF8C29</item>
+    <item name="blue_water_dark">#1B94CA</item>
+    <item name="purple_grey">#797A93</item>
+    <item name="grey_default">#808080</item>
+    <item name="brown_soft">#E3995E</item>
+    <item name="red_light">#F55C55</item>
+    <item name="green_weed">#19B272</item>
+    <item name="purple">#8d2ba6</item>
+    <item name="red_ruby">#ff0011</item>
+  </string-array>
+
+  <string-array name="manulife_products">
+    <item name="product_1">Manulife Pendapatan Bulanan II</item>
+    <item name="product_2">Manulife Obligasi Negara II</item>
+    <item name="product_3">Manulife Data Tetap Pemerintah</item>
+    <item name="product_4">Manulife Dana Tetap Utama</item>
+    <item name="product_5">Manulife Obligasi Unggulan</item>
+  </string-array>
+
+  <string-array name="manulife_persentase">
+    <item name="persentase_1">8.93</item>
+    <item name="persentase_2">34.68</item>
+    <item name="persentase_3">32.67</item>
+    <item name="persentase_4">44.17</item>
+    <item name="persentase_5">36.07</item>
+  </string-array>
+
+  <integer-array name="color_scheme_loading">
+    <item>@color/green_dompet_ori</item>
+    <item>@color/grey_800</item>
+    <item>@color/orange_500</item>
+  </integer-array>
+
+  <string-array name="periode_times">
+    <item>a Week</item>
+    <item>2 Weeks</item>
+    <item>a Month</item>
+    <item>3 Months</item>
+  </string-array>
+
+  <string-array name="landing_images">
+    <item>@drawable/intro1</item>
+    <item>@drawable/intro2</item>
+    <item>@drawable/intro3</item>
+  </string-array>
+
+  <declare-styleable name="IconCategoryRounded">
+    <attr format="boolean" name="ischecked"/>
+    <attr format="boolean" name="show_check_icon"/>
+    <attr format="color" name="ic_color"/>
+    <attr format="color" name="ic_text_color"/>
+    <attr format="string" name="ic_code"/>
+    <attr format="integer" name="ic_view_size"/>
+    <attr format="integer" name="ic_size"/>
+    <attr format="string" name="tag_category"/>
+    <attr format="integer" name="ic_stroke_width"/>
+    <attr format="color" name="ic_stroke_color"/>
+  </declare-styleable>
+
+  <declare-styleable name="FollowingIndicatorPage">
+    <attr format="string" name="isprogress"/>
+    <attr format="color" name="fill_color"/>
+    <attr format="color" name="empty_color"/>
+    <attr format="color" name="stroke_color"/>
+    <attr format="color" name="label_color"/>
+    <attr format="string" name="label_text"/>
+    <attr format="dimension" name="label_size"/>
+    <attr format="dimension" name="indicator_size"/>
+    <attr format="reference" name="status"></attr>
+  </declare-styleable>
+
+
+  <string-array name="menu_settings_icon">
+    <item>{gmd-toys}</item>
+    <item>{gmd-account}</item>
+    <item>{dsf-account}</item>
+    <item>{gmd-accounts-alt}</item>
+
+    <item>{gmd-toys}</item>
+    <item>{gmd-alarm-check}</item>
+
+    <item>{gmd-toys}</item>
+    <item>{gmd-cloud-upload}</item>
+    <item>{gmd-delete}</item>
+    <item>{gmd-save}</item>
+
+    <item>{gmd-toys}</item>
+    <item>{gmd-coffee}</item>
+    <item>{gmd-assignment}</item>
+    <item>{gmd-assignment-alert}</item>
+    <item>{gmd-shield-security}</item>
+  </string-array>
+
+  <string name="my_info">Info Saya</string>
+  <string name="reminders">Reminders</string>
+  <string name="tools">Tools</string>
+  <string name="details">Detail</string>
+
+  <string-array name="menu_settings">
+    <item>@string/my_info</item>
+    <item>Profile</item>
+    <item>Manage Account</item>
+    <item>Referral</item>
+
+    <item>@string/reminders</item>
+    <item>Daily Reminder Activities</item>
+
+    <item>@string/tools</item>
+    <item>@string/sync_all_data</item>
+    <item>@string/delete_all_data</item>
+    <item>@string/export_all_data</item>
+
+    <item>@string/details</item>
+    <item>Frequently Asked Question</item>
+    <item>Term of use</item>
+    <item>Privacy &amp; Policy</item>
+    <item>Security Practice</item>
+  </string-array>
+
+  <string-array name="referal_titles_top_dialog">
+    <item>@string/title_manfaat_for_self</item>
+    <item>@string/title_manfaat_for_them</item>
+  </string-array>
+
+  <string-array name="referal_titles_top_dialog_2">
+    <item>@string/bagi_kamu</item>
+    <item>@string/bagi_mereka</item>
+  </string-array>
+
+  <string-array name="referal_descriptions">
+    <item>@string/desc_manfaat_for_self</item>
+    <item>@string/desc_manfaat_for_them</item>
+  </string-array>
+
+  <string-array name="referal_help_title">
+    <item>@string/dapatkan_point_kode_referal</item>
+  </string-array>
+
+  <string-array name="referal_help_desc">
+    <item>@string/kamu_akan_mendapatkan</item>
+  </string-array>
+
+  <string-array name="reksadana_descriptions">
+    <item>@string/reksa1</item>
+    <item>@string/reksa2</item>
+    <item>@string/reksa3</item>
+  </string-array>
+
+  <string-array name="app_options_wording_header">
+    <item>@string/myfin_header</item>
+    <item>@string/myreferral_header</item>
+  </string-array>
+
+  <string-array name="app_options_wording_body">
+    <item>@string/myfin_body</item>
+    <item>@string/myreferral_body</item>
+  </string-array>
+
+  <string-array name="app_options_wording_footer">
+    <item>@string/myfin_footer</item>
+    <item>@string/myreferral_footer</item>
+  </string-array>
+
+  <string-array name="buttons_timeline">
+    <item>Add Transaction</item>
+    <item>Button Timeline 2</item>
+    <item>Button Timeline 3</item>
+  </string-array>
+
+  <string-array name="buttons_overview">
+    <item>Button Overview 1</item>
+    <item>Button Overview 2</item>
+    <item>Button Overview 3</item>
+  </string-array>
+
+  <string-array name="buttons_account">
+    <item>Button Account 1</item>
+    <item>Button Account 2</item>
+    <item>Button Account 3</item>
+  </string-array>
+
+  <string-array name="buttons_more">
+    <item>Button More 1</item>
+    <item>Button More 2</item>
+    <item>Button More 3</item>
+  </string-array>
+
+  <string-array name="menu_dialog_labels">
+    <item>@string/show_all</item>
+    <item>@string/show_incomes_only</item>
+    <item>@string/show_expenses_only</item>
+  </string-array>
+
+
+  <string-array name="add_plan_option_wording_header">
+    <item>@string/dana_pensiun</item>
+    <item>@string/dana_darurat</item>
+    <item>@string/dana_kuliah</item>
+    <item>@string/dana_custom</item>
+  </string-array>
+
+  <string-array name="add_plan_option_wording_footer">
+    <item>@string/dana_pensiun_footer</item>
+    <item>@string/dana_darurat_footer</item>
+    <item>@string/dana_kuliah_footer</item>
+    <item>@string/dana_custom_footer</item>
+  </string-array>
+
+  <!--SETTING ARRAY-->
+  <string-array name="setting_child_item_system_labels">
+    <item>Daily Reminder Activity</item>
+  </string-array>
+
+  <string-array name="setting_child_item_system_icons">
+    <item>{dsf-reminder-2}</item>
+  </string-array>
+
+<!--General setting Icon and Label-->
+  <string-array name="setting_child_item_general_icons">
+    <item>{dsf-synchronizedata}</item>
+    <!--<item>{dsf-reminder-2}</item>-->
+    <item>{dsf-general}</item>
+    <item>{dsf-general}</item>
+    <item>{dsf-general}</item>
+    <item>{dsf-general}</item>
+    <item>{dsf-general}</item>
+  </string-array>
+
+  <string-array name="setting_child_item_general_labels">
+    <item>@string/user_profile_setting</item>
+    <item>@string/account_many</item>
+    <item>@string/category_many</item>
+    <item>@string/tag_management</item>
+    <item>@string/sync</item>
+    <item>@string/group_sharing</item>
+  </string-array>
+  <!--General setting Icon and Label-->
+
+  <!--Other setting Icon and Label-->
+  <string-array name="setting_child_item_other_labels">
+    <item>@string/language</item>
+    <item>@string/switch_mode</item>
+    <!--<item>@string/initial_day_of_the_month</item>-->
+    <item>@string/smart_reminder</item>
+    <item>@string/set_passcode</item>
+    <item>@string/export_data</item>
+    <item>@string/change_log</item>
+    <item>@string/about</item>
+  </string-array>
+
+  <string-array name="setting_child_item_other_icons">
+    <item>{dsf-worldwide}</item>
+    <item>{dsf-general}</item>
+    <!--<item>{dsf-worldwide}</item>-->
+    <item>{dsf-delete-all}</item>
+    <item>{dsf-exportalldata}</item>
+    <item>{dsf-general}</item>
+    <item>{dsf-general}</item>
+    <item>{dsf-general}</item>
+  </string-array>
+  <!--Other setting Icon and Label-->
+
+  <!--Sync setting Icon and Label-->
+  <string-array name="setting_child_item_sync_labels">
+    <item>@string/sync_all_data</item>
+    <item>@string/sync_all_bank_account</item>
+    <item>@string/sync_every_day_at</item>
+  </string-array>
+
+  <string-array name="setting_child_item_sync_icons">
+    <item>{dsf-synchronizedata}</item>
+    <item>{dsf-reminder-2}</item>
+    <item>{dsf-general}</item>
+  </string-array>
+  <!--Sync setting Icon and Label-->
+
+  <!--Export setting Icon and Label-->
+  <string-array name="setting_child_item_export_labels">
+    <item>@string/export_all_data</item>
+  </string-array>
+  <string-array name="setting_child_item_export_icons">
+    <item>{dsf-delete-all}</item>
+  </string-array>
+  <!--Export setting Icon and Label-->
+
+
+  <string-array name="bahasa">
+    <item>Indonesia</item>
+    <item>English</item>
+  </string-array>
+
+  <string-array name="setting_child_item_legals_labels">
+    <item>Lisensi open source</item>
+  </string-array>
+
+  <string-array name="setting_child_item_detail_labels">
+    <item>FAQs</item>
+    <item>Term of Use</item>
+    <item>Privacy &amp; Policy</item>
+    <item>Security Practice</item>
+  </string-array>
+
+  <string-array name="setting_child_item_detail_icons">
+    <item>{dsf-faqs}</item>
+    <item>{dsf-termofuse}</item>
+    <item>{dsf-privacypolicy}</item>
+    <item>{dsf-securitypractice}</item>
+  </string-array>
+
+  <string-array name="spinner_bar_labels">
+    <item>@string/nett_income</item>
+    <item>@string/by_transaction</item>
+    <item>@string/by_category</item>
+  </string-array>
+
+  <string-array name="overview_filter_transaction_labels">
+    <item>@string/nett_income</item>
+    <item>@string/expense</item>
+    <item>@string/income</item>
+  </string-array>
+
+  <string-array name="overview_filter_category_labels">
+    <item>@string/expense</item>
+    <item>@string/income</item>
+  </string-array>
+
+  <string-array name="overview_transactin_tab_labels">
+    <item>@string/a_year_ago</item>
+    <item>@string/this_year</item>
+    <item>@string/six_months_ago</item>
+    <item>@string/three_months_ago</item>
+    <item>@string/a_month_ago</item>
+    <item>@string/this_month</item>
+  </string-array>
+
+  <string-array name="account_spinner_labels">
+    <item>@string/edit</item>
+    <item>@string/delete</item>
+  </string-array>
+
+
+  <string-array name="permission_labels">
+    <item>Data transaksi pemasukan</item>
+    <item>Data transaksi pengeluaran</item>
+    <item>Data rencana</item>
+    <item>Data anggaran</item>
+    <item>Data tagihan</item>
+  </string-array>
+
+  <string-array name="permission_key">
+    <item>cr</item>
+    <item>db</item>
+    <item>plan</item>
+    <item>budget</item>
+    <item>alarm</item>
+  </string-array>
+
+  <string-array name="mami_conditions">
+    <item>Pengguna Dompetsehat yang menggunakan fitur ini harus menjadi nasabah Manulife Aset Manajemen Indonesia terlebih dahulu.</item>
+    <item>Pengguna Dompetsehat akan mendapat komisi ketika yang di referensikan telah menjadi nasabah manulife &amp; telah melakukan subcription/top up.</item>
+    <item>Besarnya komisi adalah 0.35% dari dana yang di subcription/top up oleh nasabah yang telah di referensikan.</item>
+    <item>Semua produk investasi yang di subcription/top up memiliki komisi yang sama, kecuali produk pasar uang yang tidak ada komisinya.</item>
+    <item>Komisi akan dibayarkan setiap bulan berikutnya setelah nasabah yang direferensikan melakukan subcription/top up.</item>
+    <item>Komisi akan diberikan dalam bentuk reksa dana Manulife Danakas II, yang bisa diakses melalui Klikmami.com atau di aplikasi Dompetsehat.</item>
+    <item>Komisi tidak diberikan jika nasabah melakukan switching.</item>
+  </string-array>
+
+  <string-array name="tour_guides_titles_step_timeline">
+    <item>Tambah Transaksi</item>
+    <item>Lihat Semua Transaksi</item>
+    <item>Cari Transaksi</item>
+    <item>Lihat Profil</item>
+    <!--<item>Ubah Kategori</item>-->
+  </string-array>
+
+  <string-array name="tour_guides_desc_timeline">
+    <item>Dengan tombol ini Anda dapat menambahkan transaksi.</item>
+    <item>Lihat semua catatan transaksi Anda.</item>
+    <item>Kesulitan menemukan transaksi? Temukan di sini.</item>
+    <item>Lihat profil lengkap Anda.</item>
+    <!--<item>Klik dan ubah jenis kategori transaksi dengan mudah</item>-->
+  </string-array>
+
+  <string-array name="spinner_year_month">
+    <item>@string/year</item>
+    <item>@string/month</item>
+  </string-array>
+
+</resources>

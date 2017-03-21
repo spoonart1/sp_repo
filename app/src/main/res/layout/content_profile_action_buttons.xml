@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_vertical"
+      android:orientation="horizontal"
+      android:padding="@dimen/padding_size_small"
+      >
+
+    <LinearLayout
+        android:id="@+id/btn_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_size_tiny"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        >
+
+      <com.mikepenz.iconics.view.IconicsTextView
+          android:id="@+id/t1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text="{dsf-edit}"
+          android:textColor="@color/text_state_color"
+          android:textSize="@dimen/huge_text_size"
+          />
+
+      <TextView
+          android:id="@+id/t2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/edit"
+          android:textColor="@color/text_state_color"
+          />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/grey_200"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_size_tiny"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        >
+
+      <com.mikepenz.iconics.view.IconicsTextView
+          android:id="@+id/t3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text="{dsf-help}"
+          android:textColor="@color/text_state_color"
+          android:textSize="@dimen/huge_text_size"
+          />
+
+      <TextView
+          android:id="@+id/t4"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/help"
+          android:textColor="@color/text_state_color"
+          />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/grey_200"
+        />
+
+    <LinearLayout
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_size_tiny"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        >
+
+      <com.mikepenz.iconics.view.IconicsTextView
+          android:id="@+id/t7"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text="{dsf-logout}"
+          android:textColor="@color/text_state_color"
+          android:textSize="@dimen/huge_text_size"
+          android:visibility="gone"
+          />
+
+      <TextView
+          android:id="@+id/t8"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/logout"
+          android:textColor="@color/text_state_color"
+          android:visibility="gone"
+          />
+
+      <com.mikepenz.iconics.view.IconicsTextView
+          android:id="@+id/t5"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text="{dsf-setting}"
+          android:textColor="@color/text_state_color"
+          android:textSize="@dimen/huge_text_size"
+          />
+
+      <TextView
+          android:id="@+id/t6"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/setting"
+          android:textColor="@color/text_state_color"
+          />
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+  <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      >
+
+    <TextView
+        android:id="@+id/btn_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:text="@string/do_verification"
+        android:padding="@dimen/padding_size_medium"
+        android:background="@color/red_400"
+        />
+
+  </FrameLayout>
+
+</LinearLayout>

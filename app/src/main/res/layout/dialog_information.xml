@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_rounded_white"
+    android:clipChildren="true"
+    android:orientation="vertical"
+    >
+
+  <TextView
+      android:id="@+id/title"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/padding_size_medium"
+      android:gravity="center"
+      android:text="@string/dialog_information_title"
+      android:textSize="@dimen/big_text_size_2"
+      />
+
+  <!--<View
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/line_divider_size"
+      android:background="@color/grey_200"
+      />-->
+
+  <LinearLayout
+      android:id="@+id/ll_content"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:gravity="center_horizontal"
+      android:orientation="vertical"
+      >
+
+    <com.mikepenz.iconics.view.IconicsTextView
+        android:id="@+id/icon"
+        android:gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="@dimen/padding_size_high"
+        android:textSize="@dimen/big_icon_size"
+        android:text="{dsf-calculator}"
+        android:textColor="@color/light_blue_400"
+        />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/padding_size_medium"
+        android:lineSpacingExtra="@dimen/padding_size_micro"
+        android:textColor="@color/grey_800"
+        android:text="@string/dialog_information_subtitle"
+        />
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:background="@color/grey_300"
+      android:padding="@dimen/padding_size_medium"
+      android:layout_margin="@dimen/padding_size_high"
+      >
+
+    <TextView
+        android:text="@string/dialog_information_example"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:text="Rp 100.000.000 x 0.35% = Rp 350.000,-"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/padding_size_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/green_dompet_ori"
+        />
+
+  </LinearLayout>
+
+  <TextView
+      android:gravity="center"
+      android:text="@string/dialog_information_footer"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/padding_size_medium"
+      android:layout_marginBottom="@dimen/padding_size_medium"
+      android:layout_marginLeft="@dimen/padding_root_layout_twice"
+      android:layout_marginRight="@dimen/padding_root_layout_twice"
+      />
+
+  <Button
+      android:id="@+id/btn_done"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:stateListAnimator="@null"
+      android:text="@string/i_understand"
+      android:textAllCaps="false"
+      android:textColor="@color/state_button_white_landing_try"
+      android:layout_marginTop="@dimen/padding_size_high"
+      android:layout_marginLeft="@dimen/padding_root_layout_twice"
+      android:layout_marginRight="@dimen/padding_root_layout_twice"
+      android:layout_marginBottom="@dimen/padding_root_layout"
+      android:background="@drawable/button_rounded_white_landing_try"
+      />
+
+</LinearLayout>

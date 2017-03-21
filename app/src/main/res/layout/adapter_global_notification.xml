@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="?attr/actionBarItemBackground"
+      android:orientation="horizontal"
+      android:paddingLeft="@dimen/padding_size_high"
+      android:paddingRight="@dimen/padding_size_high"
+      android:paddingTop="@dimen/padding_size_small"
+      >
+
+    <javasign.com.dompetsehat.utils.IconCategoryRounded
+        android:id="@+id/icr_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:ic_color="@color/blue_500"
+        app:ic_view_size="50"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/icr_category"
+        android:layout_marginLeft="@dimen/padding_size_medium"
+        android:layout_toRightOf="@id/icr_category"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        >
+
+      <TextView
+          android:id="@+id/tv_title"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Transaksi Bank BCA telah di perbaharui"
+          />
+
+      <TextView
+          android:id="@+id/tv_date"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/padding_size_tiny"
+          android:text="20 menit lalu"
+          android:textColor="@color/grey_400"
+          android:textSize="@dimen/small_text_size"
+          />
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/line_divider_size"
+          android:layout_alignLeft="@id/ll_info"
+          android:layout_marginTop="@dimen/padding_root_layout"
+          android:background="@color/grey_200"
+          />
+
+    </LinearLayout>
+
+  </RelativeLayout>
+
+</LinearLayout>

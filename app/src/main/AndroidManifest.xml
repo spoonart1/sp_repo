@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="javasign.com.dompetsehat">
+
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission android:name="android.permission.WAKE_LOCK"/>
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <uses-permission android:name="android.permission.VIBRATE"/>
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+  <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+  <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+  <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+
+  <application
+      android:name=".base.MyCustomApplication"
+      android:allowBackup="true"
+      android:fullBackupContent="@xml/backup_config"
+      android:icon="@drawable/icon_dompet"
+      android:label="@string/dompet_sehat"
+      android:largeHeap="true"
+      android:supportsRtl="true"
+      android:theme="@style/AppTheme"
+      tools:replace="android:label">
+
+    <activity
+        android:name=".ui.activities.main.NewMainActivity"
+        android:label="@string/dompet_sehat"
+        android:screenOrientation="portrait">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+
+    <activity
+        android:name=".ui.activities.main.NewMainActivityMyFin"
+        android:label="MY FIN"
+        android:screenOrientation="portrait"/>
+
+    <activity
+        android:name=".ui.activities.main.NewMainActivityMyReferral"
+        android:label="MY REFERRAL"
+        android:screenOrientation="portrait"/>
+
+    <activity android:name=".ui.activities.notification.GlobalNotificationActivity"
+        android:screenOrientation="portrait"/>
+
+    <activity
+        android:name=".ui.activities.TestActivity"
+        android:screenOrientation="portrait"/>
+
+    <activity
+        android:name=".ui.activities.landing.LandingPages"
+        android:screenOrientation="portrait">
+    </activity>
+
+    <activity
+        android:name=".ui.activities.ask.AskActivity"
+        android:screenOrientation="portrait">
+    </activity>
+
+    <activity
+        android:name=".ui.activities.register.SignUpActivity"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="adjustResize"/>
+    <activity
+        android:name=".ui.activities.login.SignInActivity"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="adjustResize"/>
+    <activity
+        android:name=".ui.activities.forgot.ForgotPasswordActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.onestep.OneStepCloserActivity"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="adjustResize"/>
+
+    <activity
+        android:name=".ui.activities.home.HomeActivity"
+        android:screenOrientation="portrait"/>
+
+    <activity
+        android:name=".ui.activities.trend.TrendsActivity"
+        android:screenOrientation="portrait"/>
+
+    <activity
+        android:name=".ui.activities.transaction.TransactionsActivity"
+        android:screenOrientation="portrait"/>
+
+    <activity
+        android:name=".ui.activities.transaction.AddTransactionActivity"
+        android:screenOrientation="portrait"/>
+
+    <activity
+        android:name=".ui.activities.category.CategoryActivity"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="stateHidden"
+        />
+
+    <activity
+        android:name=".ui.activities.category.AddCategory"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.tag.AddTagActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.search.SearchActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.budget.BudgetActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.budget.BudgetSetupActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.budget.BudgetResultEstimatorActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.budget.AddBudgetActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.budget.BudgetDetailActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.budget.SchedulerMainActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.plan.PlansActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.plan.AddPlanActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.portofolio.PortofolioActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.plan.DetailPlanActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.account.NewManageAccountActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.account.AddAccountActivity"
+        android:screenOrientation="portrait"
+        android:noHistory="true"
+        />
+
+    <activity
+        android:name=".ui.activities.account.AddAccountDompetActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.account.AddAccountBankActivity"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="adjustResize"
+        />
+
+    <activity
+        android:name=".ui.activities.portofolio.DetailPortofolioActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.institusi.InstitusiActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.institusi.vendor.manulife.ManulifeHomePageActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.institusi.ListInstitusiActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.institusi.ListAvailableInstitusiActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.institusi.vendor.manulife.LoginKlikMamiActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.institusi.vendor.manulife.TermsAndConditionManulife"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.institusi.loader.WebviewInstutisiActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.institusi.vendor.manulife.InputReferralCodeMamiActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.institusi.vendor.manulife.RegisterMamiActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.institusi.vendor.manulife.FinalRegistrationMamiAcitivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.feedback.FeedbackActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.feedback.ThankFullActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.setting.SettingActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.setting.syncs.SyncSettingActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.setting.export.ExportSettingActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.setting.about.AboutActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.setting.sharing.SharingDataActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.setting.sharing.SharingDataPermissionActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.setting.sharing.InviteMemberSharingDataActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.setting.sharing.permission.PermissionSettingActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.webview.WebLoaderActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.setting.sharing.notif.NotificationActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.setting.switchmode.SwitchModeActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.closing.ClosingActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.comission.ComissionActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.account.ManageEachAccountActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.plan.SetupPlanActivity"
+        android:screenOrientation="portrait"
+        />
+    <activity
+        android:name=".ui.activities.plan.FinishingPlanActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.plan.ProductListInstitusiActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.plan.ProductListNonInstitusiActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.plan.CustomPlanActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.plan.DanaDaruratActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.plan.DanaPensiunActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.plan.DanaKuliahActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.plan.FormEditFieldDanaKuliahActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.referral.ReferralLoaderActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.help.HelpActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.reminder.ReminderActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.tag.TagActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.reminder.AddReminderActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".ui.activities.account.FinalCreateAccountActivity"
+        android:screenOrientation="portrait"
+        android:noHistory="true"
+        />
+
+    <activity
+        android:name=".ui.activities.institusi.FormEditFieldActivity"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="stateAlwaysVisible"
+        />
+
+    <activity
+        android:name=".ui.activities.badges.BadgesActivity"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="adjustPan"/>
+
+    <activity
+        android:name=".ui.activities.debts.DebtsActivity"
+        android:screenOrientation="portrait"/>
+
+    <activity
+        android:name=".ui.activities.debts.AddDebtActivity"
+        android:screenOrientation="portrait"/>
+
+    <activity
+        android:name=".ui.activities.profile.ProfileActivity"
+        android:screenOrientation="portrait"/>
+
+    <activity
+        android:name=".ui.activities.verification.EmailVerificationActivity"
+        android:screenOrientation="portrait"/>
+
+    <activity
+        android:name=".ui.activities.profile.EditProfileActivity"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="adjustResize"/>
+
+    <activity
+        android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+        android:theme="@style/Base.Theme.AppCompat"/>
+
+    <activity
+        android:name=".PassCodeActivity"
+        android:theme="@style/Base.Theme.AppCompat"/>
+
+
+    <!--SERVICE AND META DATA-->
+    <meta-data
+        android:name="io.fabric.ApiKey"
+        android:value="0156c2581e76598397f33d19c0516dbcdcdf50dc"/>
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="AIzaSyAJ4VY_lS3jXEQzB1na6tUXGS97b1uw_Z0"/>
+
+    <receiver
+        android:name=".receivers.AllWakefulBroadcastReceiver"
+        android:exported="false">
+      <intent-filter>
+        <action android:name="android.intent.action.BOOT_COMPLETED"/>
+        <action android:name="android.intent.action.USER_PRESENT"/>
+        <action android:name="com.parse.push.intent.RECEIVE"/>
+        <action android:name="com.parse.push.intent.DELETE"/>
+        <action android:name="com.parse.push.intent.OPEN"/>
+      </intent-filter>
+    </receiver>
+    <receiver android:name=".receivers.NetworkChangeReceiver">
+      <intent-filter>
+        <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+        <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+      </intent-filter>
+    </receiver>
+
+    <service
+        android:name=".services.ReminderService"
+        android:enabled="true"
+        android:exported="false"/>
+    <service
+        android:name=".services.ActivitiesReminderService"
+        android:enabled="true"/>
+    <service
+        android:name=".services.AlarmService"
+        android:enabled="true"/>
+    <service
+        android:name=".services.SyncIntentService"
+        android:enabled="true"/>
+    <service
+        android:name=".services.InsertDataService"
+        android:enabled="true"/>
+    <service
+        android:name=".services.AccountBankSyncService"
+        android:enabled="true"/>
+    <service
+        android:name=".base.MyFirebaseMessagingService">
+      <intent-filter>
+        <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+      </intent-filter>
+    </service>
+    <service
+        android:name=".base.MyFirebaseInstanceIDService">
+      <intent-filter>
+        <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+      </intent-filter>
+    </service>
+
+    // start Android-Job
+
+    <service
+        android:name="com.evernote.android.job.v21.PlatformJobService"
+        android:exported="false"
+        android:permission="android.permission.BIND_JOB_SERVICE"/>
+
+    <service
+        android:name="com.evernote.android.job.v14.PlatformAlarmService"
+        android:exported="false"/>
+
+    <receiver
+        android:name="com.evernote.android.job.v14.PlatformAlarmReceiver"
+        android:exported="false">
+      <intent-filter>
+        <!-- Keep the filter for legacy intents -->
+        <action android:name="com.evernote.android.job.v14.RUN_JOB"/>
+        <action android:name="net.vrallev.android.job.v14.RUN_JOB"/>
+      </intent-filter>
+    </receiver>
+
+    <receiver
+        android:name="com.evernote.android.job.JobBootReceiver"
+        android:exported="false">
+      <intent-filter>
+        <action android:name="android.intent.action.BOOT_COMPLETED"/>
+      </intent-filter>
+    </receiver>
+
+    <service
+        android:name="com.evernote.android.job.gcm.PlatformGcmService"
+        android:enabled="false"
+        android:exported="true"
+        android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE">
+      <intent-filter>
+        <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY"/>
+      </intent-filter>
+    </service>
+
+    // end Android-Job
+
+    <meta-data
+        android:name="com.facebook.accountkit.ApplicationName"
+        android:value="DompetSehat"/>
+
+    <meta-data
+        android:name="com.facebook.sdk.ApplicationId"
+        android:value="@string/FACEBOOK_APP_ID"/>
+    <meta-data
+        android:name="com.facebook.accountkit.ClientToken"
+        android:value="@string/ACCOUNT_KIT_CLIENT_TOKEN"/>
+
+    <activity
+        android:name="com.facebook.accountkit.ui.AccountKitActivity"
+        android:theme="@style/AccountKitDS"
+        tools:replace="android:theme">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+
+        <data android:scheme="ak1083736901703671"/>
+      </intent-filter>
+    </activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+    <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version"/>
+  </application>
+</manifest>

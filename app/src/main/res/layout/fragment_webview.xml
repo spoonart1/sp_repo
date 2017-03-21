@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+  <HorizontalScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/grey_200"
+      android:scrollbarSize="@dimen/padding_size_micro"
+      >
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+      <RadioButton
+          android:id="@+id/rb1"
+          android:layout_width="wrap_content"
+          android:layout_height="@dimen/ds_action_bar_size"
+          android:layout_marginLeft="@dimen/padding_size_small"
+          android:layout_marginRight="@dimen/padding_size_tiny"
+          android:button="@null"
+          android:checked="true"
+          android:gravity="center"
+          android:text="One"
+          android:textColor="@color/rb_text_color_selector_green"
+          />
+
+      <RadioButton
+          android:id="@+id/rb2"
+          android:layout_width="wrap_content"
+          android:layout_height="@dimen/ds_action_bar_size"
+          android:layout_marginLeft="@dimen/padding_size_tiny"
+          android:layout_marginRight="@dimen/padding_size_tiny"
+          android:button="@null"
+          android:gravity="center"
+          android:text="Two"
+          android:textColor="@color/rb_text_color_selector_green"
+          />
+
+      <RadioButton
+          android:id="@+id/rb3"
+          android:layout_width="wrap_content"
+          android:layout_height="@dimen/ds_action_bar_size"
+          android:layout_marginLeft="@dimen/padding_size_tiny"
+          android:layout_marginRight="@dimen/padding_size_small"
+          android:button="@null"
+          android:gravity="center"
+          android:text="Three"
+          android:textColor="@color/rb_text_color_selector_green"
+          />
+
+    </RadioGroup>
+
+  </HorizontalScrollView>
+
+  <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      >
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_200"
+        />
+    <LinearLayout
+        android:id="@+id/action_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:padding="@dimen/padding_root_layout_twice"
+        >
+
+      <com.mikepenz.iconics.view.IconicsTextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_margin="@dimen/padding_root_layout"
+          android:gravity="center"
+          android:text="{cmd-book}"
+          android:textColor="@color/blue_grey_600"
+          android:textSize="@dimen/big_icon_size"
+          />
+
+      <Button
+          android:id="@+id/btn_action_faq"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:background="@drawable/button_rounded_blue_pastel_dark"
+          android:stateListAnimator="@null"
+          android:text="@string/faqs"
+          android:textAllCaps="false"
+          android:textColor="@color/green_dompet_ori"
+          />
+
+      <Button
+          android:id="@+id/btn_action"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginTop="@dimen/padding_size_small"
+          android:background="@drawable/button_rounded_blue_pastel_dark"
+          android:stateListAnimator="@null"
+          android:text="@string/see_manual"
+          android:textAllCaps="false"
+          android:textColor="@color/green_dompet_ori"
+          />
+
+      <Button
+          android:id="@+id/btn_support_center"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginTop="@dimen/padding_size_small"
+          android:background="@drawable/button_rounded_blue_pastel_dark"
+          android:stateListAnimator="@null"
+          android:text="Support Center"
+          android:textAllCaps="false"
+          android:textColor="@color/green_dompet_ori"
+          />
+
+    </LinearLayout>
+
+  </FrameLayout>
+
+</LinearLayout>

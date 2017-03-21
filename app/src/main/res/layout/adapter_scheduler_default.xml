@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/padding_size_small"
+    android:paddingBottom="@dimen/padding_size_small"
+    android:paddingLeft="@dimen/padding_size_high"
+    android:paddingRight="@dimen/padding_size_high"
+    android:background="@drawable/button_white"
+    >
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center_vertical"
+      >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:text="4 Bulan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+
+    <com.mikepenz.iconics.view.IconicsTextView
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:padding="@dimen/padding_size_tiny"
+        android:text="{dsf-check}"
+        android:textColor="@color/green_dompet_ori"
+        android:textSize="@dimen/big_text_size"
+        />
+
+  </LinearLayout>
+
+
+  <LinearLayout
+      android:layout_marginTop="@dimen/padding_size_tiny"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center_vertical"
+      >
+
+    <TextView
+        android:id="@+id/tv_start"
+        android:text="01/09"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey_600"
+        />
+
+    <TextView
+        android:text="-"
+        android:layout_marginLeft="@dimen/padding_size_tiny"
+        android:layout_marginRight="@dimen/tiny_text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey_600"
+        />
+
+    <TextView
+        android:id="@+id/tv_end"
+        android:text="01/09"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey_600"
+        />
+
+  </LinearLayout>
+
+  <View
+      android:id="@+id/v_divider"
+      android:layout_width="match_parent"
+      android:layout_marginTop="@dimen/padding_size_small"
+      android:layout_height="@dimen/line_divider_size"
+      android:background="@color/grey_200"
+      />
+
+</LinearLayout>

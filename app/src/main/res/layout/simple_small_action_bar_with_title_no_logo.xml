@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:elevation="@dimen/normal_elevation"
+    >
+
+  <TextView
+      android:id="@+id/tv_title"
+      android:text="Title"
+      android:layout_width="wrap_content"
+      android:gravity="center"
+      android:textSize="@dimen/big_text_size_2"
+      android:textColor="@color/black"
+      android:layout_height="@dimen/ds_action_bar_size"
+      android:layout_centerHorizontal="true"
+      />
+
+  <com.mikepenz.iconics.view.IconicsTextView
+      android:id="@+id/ic_back"
+      android:text="{dsf-arrow-back}"
+      android:textSize="@dimen/huge_text_size"
+      android:gravity="center"
+      android:layout_width="@dimen/ds_action_bar_size"
+      android:layout_height="@dimen/ds_action_bar_size"
+      android:clickable="true"
+      android:background="?attr/actionBarItemBackground"
+      />
+
+  <com.mikepenz.iconics.view.IconicsTextView
+      android:id="@+id/ic_menu"
+      android:text="{dsf-plus}"
+      android:textSize="@dimen/huge_text_size"
+      android:layout_width="@dimen/ds_action_bar_size"
+      android:layout_height="@dimen/ds_action_bar_size"
+      android:clickable="true"
+      android:gravity="center"
+      android:layout_alignParentRight="true"
+      android:background="?attr/actionBarItemBackground"
+      />
+
+  <com.mikepenz.iconics.view.IconicsTextView
+      android:id="@+id/ic_search"
+      android:text="{dsf-search}"
+      android:textSize="@dimen/huge_text_size"
+      android:gravity="center"
+      android:layout_width="@dimen/ds_action_bar_size"
+      android:layout_height="@dimen/ds_action_bar_size"
+      android:clickable="true"
+      android:layout_toLeftOf="@id/ic_menu"
+      android:background="?attr/actionBarItemBackground"
+      />
+
+</RelativeLayout>

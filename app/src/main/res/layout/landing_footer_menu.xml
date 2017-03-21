@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footer_menu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_root_layout"
+    >
+
+  <!--<LinearLayout
+      android:id="@+id/ll_fb"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/button_white"
+      android:clickable="true"
+      android:gravity="center_vertical"
+      android:orientation="horizontal"
+      android:paddingBottom="@dimen/padding_size_small"
+      android:paddingTop="@dimen/padding_size_small"
+      >
+
+    <com.mikepenz.iconics.view.IconicsTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="{dsf-fb}"
+        android:textSize="@dimen/huge_text_size"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_size_medium"
+        android:text="Facebook"
+        />
+    <com.facebook.login.widget.LoginButton
+        android:visibility="gone"
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp" />
+
+  </LinearLayout>
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/line_divider_size"
+      android:background="@color/grey_200"
+      />-->
+
+  <LinearLayout
+      android:id="@+id/ll_top"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:clickable="true"
+      android:gravity="center_vertical"
+      android:orientation="horizontal"
+      android:paddingBottom="@dimen/padding_size_high"
+      android:paddingTop="@dimen/padding_size_high"
+      style="@style/Widget.AppCompat.Button.Borderless"
+      >
+
+    <com.mikepenz.iconics.view.IconicsTextView
+        android:id="@+id/ic_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_size_small"
+        android:text="{dsf-handphone}"
+        android:textSize="@dimen/huge_text_size"
+        android:textColor="@color/green_500"
+        />
+
+    <TextView
+        android:id="@+id/label_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_size_medium"
+        android:textAllCaps="true"
+        android:text="@string/phone_number_short"
+        />
+
+  </LinearLayout>
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/line_divider_size"
+      android:background="@color/grey_200"
+      />
+
+  <LinearLayout
+      android:id="@+id/ll_cen"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:clickable="true"
+      android:gravity="center_vertical"
+      android:orientation="horizontal"
+      android:paddingBottom="@dimen/padding_size_high"
+      android:paddingTop="@dimen/padding_size_high"
+      style="@style/Widget.AppCompat.Button.Borderless"
+      >
+
+    <com.mikepenz.iconics.view.IconicsTextView
+        android:id="@+id/ic_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_size_small"
+        android:text="{dsf-email}"
+        android:textSize="@dimen/huge_text_size"
+        android:textColor="@color/accent_gmail"
+        />
+
+    <TextView
+        android:id="@+id/label_cen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_size_medium"
+        android:text="@string/email_only"
+        android:textAllCaps="true"
+        />
+
+  </LinearLayout>
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/line_divider_size"
+      android:background="@color/grey_200"
+      />
+
+  <LinearLayout
+      android:id="@+id/ll_bot"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:clickable="true"
+      android:gravity="center_vertical"
+      android:orientation="horizontal"
+      android:paddingBottom="@dimen/padding_size_high"
+      android:paddingTop="@dimen/padding_size_high"
+      style="@style/Widget.AppCompat.Button.Borderless"
+      >
+
+    <com.mikepenz.iconics.view.IconicsTextView
+        android:id="@+id/ic_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_size_small"
+        android:text="{dsf-email}"
+        android:textSize="@dimen/huge_text_size"
+        android:textColor="@color/accent_gmail"
+        />
+
+    <TextView
+        android:id="@+id/label_bot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_size_medium"
+        android:text="@string/email_only"
+        android:textAllCaps="true"
+        />
+
+  </LinearLayout>
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/line_divider_size"
+      android:background="@color/grey_200"
+      />
+
+</LinearLayout>

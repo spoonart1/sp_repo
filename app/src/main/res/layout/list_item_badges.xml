@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:paddingBottom="@dimen/padding_size_small"
+      android:paddingLeft="@dimen/padding_size_medium"
+      android:paddingRight="@dimen/padding_size_medium"
+      android:paddingTop="@dimen/padding_size_small"
+      android:background="?attr/actionBarItemBackground"
+      >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="2dp"
+        >
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_vertical"
+          android:orientation="horizontal"
+          >
+
+        <javasign.com.dompetsehat.utils.CircleImageView
+            android:id="@+id/badges_icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:elevation="@dimen/normal_elevation"
+            android:src="@drawable/beginner"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_size_medium"
+            android:orientation="vertical"
+            >
+
+          <TextView
+              android:id="@+id/tv_badges_name"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingTop="2dp"
+              android:text="Beginner"
+              android:textSize="@dimen/bigger_text_size"
+              />
+
+          <TextView
+              android:id="@+id/tv_badges_status"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingTop="2dp"
+              android:text="@string/in_progress"
+              android:textColor="@color/orange_600"
+              />
+
+        </LinearLayout>
+
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="@dimen/padding_size_small"
+          android:layout_marginTop="@dimen/padding_size_medium"
+          android:orientation="vertical"
+          android:paddingRight="@dimen/padding_size_small"
+          >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/balances"
+              android:textSize="@dimen/average_text_size"
+              />
+          <TextView
+              android:id="@+id/tv_saldo_title"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:gravity="right"
+              android:text="Title1"
+              android:textSize="@dimen/average_text_size"
+              />
+        </LinearLayout>
+
+        <javasign.com.dompetsehat.view.RoundProgress
+            android:id="@+id/saldo_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_size_high"
+            android:layout_marginTop="@dimen/padding_size_tiny"
+            app:max="100"
+            app:progress="50"
+            app:progressDrawable="@drawable/drawable_saldo_bar"
+            app:trackerDrawable="@drawable/rounded_square_grey_solid"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_size_medium"
+            android:orientation="horizontal"
+            >
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/transactions"
+              android:textSize="@dimen/average_text_size"
+              />
+          <TextView
+              android:id="@+id/tv_transaction_title"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:gravity="right"
+              android:text="Title1"
+              android:textSize="@dimen/average_text_size"
+              />
+        </LinearLayout>
+        <javasign.com.dompetsehat.view.RoundProgress
+            android:id="@+id/transaction_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_size_high"
+            android:layout_marginTop="@dimen/padding_size_tiny"
+            app:max="100"
+            app:progress="50"
+            app:progressDrawable="@drawable/drawable_transaction_bar"
+            app:trackerDrawable="@drawable/rounded_square_grey_solid"
+            />
+      </LinearLayout>
+    </LinearLayout>
+  </LinearLayout>
+</LinearLayout>

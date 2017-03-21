@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_white"
+    android:orientation="vertical"
+    >
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_vertical"
+      android:orientation="horizontal"
+      android:paddingBottom="@dimen/padding_root_layout"
+      android:paddingLeft="@dimen/padding_size_high"
+      android:paddingRight="@dimen/padding_size_high"
+      android:paddingTop="@dimen/padding_root_layout"
+      >
+
+    <TextView
+        android:id="@+id/tv_label"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_size_medium"
+        android:text="Manulife"
+        />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:text="belum terhubung"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_400"
+        android:textSize="@dimen/small_text_size"
+        android:paddingLeft="@dimen/padding_size_tiny"
+        android:paddingRight="@dimen/padding_size_tiny"
+        android:layout_marginRight="@dimen/padding_size_medium"
+        />
+
+    <com.mikepenz.iconics.view.IconicsTextView
+        android:text="{dsf-right-chevron-thin}"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/big_text_size"
+        />
+
+  </LinearLayout>
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/line_divider_size"
+      android:background="@color/grey_200"
+      />
+
+</LinearLayout>

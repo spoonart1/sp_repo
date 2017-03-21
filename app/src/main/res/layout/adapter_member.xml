@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="48dp"
+      android:background="?attr/actionBarItemBackground"
+      android:gravity="center_vertical"
+      android:orientation="horizontal"
+      android:paddingBottom="@dimen/padding_size_small"
+      android:paddingLeft="@dimen/padding_size_high"
+      android:paddingRight="@dimen/padding_size_high"
+      android:paddingTop="@dimen/padding_size_small"
+      >
+
+    <TextView
+        android:id="@+id/tv_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/padding_size_high"
+        android:layout_weight="1"
+        android:text="Member\'s name"
+        />
+
+    <!--<com.mikepenz.iconics.view.IconicsTextView
+        android:id="@+id/btn_delete"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:text="{dsf-delete-all}"
+        android:textSize="@dimen/bigger_text_size"
+        />-->
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="menunggu"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/smaller_text_size"
+        android:background="@drawable/shape_rounded"
+        android:paddingTop="@dimen/padding_size_tiny"
+        android:paddingBottom="@dimen/padding_size_tiny"
+        android:paddingLeft="@dimen/padding_size_small"
+        android:paddingRight="@dimen/padding_size_small"
+        />
+
+
+  </LinearLayout>
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/line_divider_size"
+      android:background="@color/grey_200"
+      />
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/blankview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_200"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/grey_200"
+      android:gravity="center"
+      android:orientation="vertical"
+      android:padding="@dimen/padding_root_layout"
+      >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+      <com.mikepenz.iconics.view.IconicsTextView
+          android:id="@+id/icon"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:text="{dsf-general}"
+          android:textColor="@color/blue_grey_300"
+          android:textSize="@dimen/big_icon_size"
+          />
+
+      <!--<ProgressBar-->
+      <!--android:id="@+id/progress_bar"-->
+      <!--android:layout_gravity="center"-->
+      <!--android:layout_width="@dimen/ds_action_bar_size"-->
+      <!--android:layout_height="@dimen/ds_action_bar_size"-->
+      <!--/>-->
+
+      <com.wang.avi.AVLoadingIndicatorView
+          android:id="@+id/progress_bar"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:visibility="visible"
+          app:indicatorColor="@color/colorAccent"
+          app:indicatorName="BallPulseIndicator"
+          style="@style/AVLoadingIndicatorView"
+          />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_root_layout"
+        android:gravity="center"
+        android:text="@string/lorem_ipsum"
+        />
+
+    <TextView
+        android:id="@+id/action_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_size_medium"
+        android:text="action"
+        android:visibility="gone"
+        />
+    <Button
+        android:id="@+id/aditional_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_size_high"
+        android:background="@drawable/button_orange"
+        android:text="action"
+        android:textColor="@color/White"
+        android:visibility="gone"
+        />
+
+  </LinearLayout>
+
+  <toan.android.floatingactionmenu.FloatingActionButton
+      android:id="@+id/fab_add"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_gravity="bottom|right"
+      android:layout_margin="@dimen/padding_size_medium"
+      android:orientation="vertical"
+      android:visibility="gone"
+      app:fabSize="auto"
+      app:fab_colorNormal="@color/green_dompet_ori"
+      app:fab_colorPressed="@color/green_darker"
+      app:fab_icon="@drawable/ic_add_white_48dp"
+      />
+
+</FrameLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+    <com.mikepenz.iconics.view.IconicsTextView
+        android:text="{gmd-repeat} Periode"
+        android:textColor="@color/green"
+        android:textSize="@dimen/huge_text_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/padding_size_small"
+        android:background="@drawable/edittext_background_green"/>
+    <NumberPicker
+        android:id="@+id/periode_picker"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/padding_size_high"
+        android:layout_height="wrap_content"
+        android:solidColor="@color/white_text_light"/>
+    <Button
+        android:id="@+id/btn_done"
+        android:text="@string/done"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/big_text_size"
+        android:layout_height="@dimen/button_height"
+        android:background="@drawable/button_green_dompet"/>
+</LinearLayout>

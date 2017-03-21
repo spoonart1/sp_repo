@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/button_height"
+    android:background="@drawable/button_gray_50">
+    <!--<ImageView
+        android:id="@+id/iv_icon"
+        android:layout_weight="0"
+        android:layout_marginLeft="@dimen/padding_size_medium"
+        android:layout_width="@dimen/button_height"
+        android:layout_height="@dimen/button_height"
+        android:src="@drawable/mandiri"/>-->
+    <FrameLayout
+        android:layout_marginLeft="@dimen/padding_size_small"
+        android:layout_width="@dimen/circle_icon"
+        android:layout_height="@dimen/circle_icon">
+        <javasign.com.dompetsehat.utils.CircleShapeView
+            android:id="@+id/csv_secondary_icon"
+            android:padding="@dimen/padding_size_high"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/circle_icon"
+            android:layout_height="@dimen/circle_icon"/>
+    </FrameLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_size_small">
+        <TextView
+            android:id="@+id/tv_rekening"
+            android:text="Rek xx.xx.88"
+            android:textSize="@dimen/padding_size_medium"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_total"
+            android:text="Rp total"
+            android:ellipsize="end"
+            android:textSize="@dimen/padding_size_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.mikepenz.iconics.view.IconicsButton
+        android:id="@+id/ib_right_action_button"
+        android:text="{gmd-more-vert}"
+        android:textColor="@color/grey_800"
+        android:padding="@dimen/padding_size_medium"
+        android:focusable="false"
+        android:layout_width="@dimen/button_action_width"
+        android:layout_height="@dimen/button_height"
+        android:gravity="center"
+        android:stateListAnimator="@null"
+        android:background="@drawable/button_transparent_in_normal"/>
+</LinearLayout>

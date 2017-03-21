@@ -1,0 +1,182 @@
+apply plugin: 'com.android.application'
+
+buildscript {
+  repositories {
+    maven {
+      url 'https://maven.fabric.io/public'
+    }
+  }
+
+  dependencies {
+    classpath 'io.fabric.tools:gradle:1.+'
+  }
+}
+
+apply plugin: 'io.fabric'
+
+repositories {
+  maven { url 'https://maven.fabric.io/public' }
+  maven { url "https://jitpack.io" }
+  maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+}
+
+//apply plugin: 'com.getkeepsafe.dexcount'
+apply plugin: 'org.moallemi.advanced-build-version'
+apply plugin: 'me.tatarka.retrolambda'
+apply plugin: 'com.neenbedankt.android-apt'
+//apply plugin: 'com.google.firebase.firebase-crash'
+
+android {
+  signingConfigs {
+    config {
+      keyAlias 'DompetSehat'
+      keyPassword 'dompetsehat2015'
+      storeFile file('/Users/avesina/Downloads/pass keystore/dompetsehat_key.jks')
+      storePassword 'dompetsehat2015'
+    }
+  }
+  useLibrary 'org.apache.http.legacy'
+  compileSdkVersion 25
+  buildToolsVersion "25.0.2"
+  defaultConfig {
+    applicationId "javasign.com.dompetsehat"
+    minSdkVersion 16
+    targetSdkVersion 25
+    versionCode 57
+    versionName "1.7.4.29"
+    multiDexEnabled true
+  }
+  buildTypes {
+    debug {
+      minifyEnabled false
+      debuggable true
+      buildConfigField 'String', 'SERVER_URL',
+          '"eyJpdiI6ImFIaHFhR0o0ZG5VeVp6QmxaelJ6TXc9PSIsInZhbHVlIjoiZHFlMFQwa1pJbFhDM3BIQTZSN3BBb080TGlPbWN5bG5VWVlDeGdRQ3pXWT0iLCJtYWMiOiI4NTdlNmE1YjgzMDUwNzE1YmYyMWU2ZDU2MzAyZTAxMCJ9"'
+      buildConfigField 'String', 'SERVER_URL_RELEASE',
+          '"eyJpdiI6ImNEaGhjM0Z1YVdwdU4zazBhbUZxY2c9PSIsInZhbHVlIjoiU0IxeVJBOEZXekJJNVZmRjVhK1FDUndjelM5M3pxdW82OHZnODJLMlJrND0iLCJtYWMiOiIzYzM4MGJkMzFjNDExODFiZmFiNjA3YTY3YzBlNjhiNyJ9"'
+      buildConfigField 'String', 'URL_MAMI',
+          '"eyJpdiI6ImREQjNOR05zTVhscmVIVTVNbk5yYkE9PSIsInZhbHVlIjoiZEpJYUNvcDlvOGwxRThXa3hDN3Uzc1NwMjZcL2JvRVJqcncxbktSejRwYVE9IiwibWFjIjoiYWE0OWJmNGUzYmQ2MGRiNWU0YWU1M2Q3ZmQwZWNmZjEifQ=="'
+      buildConfigField 'String', 'APP_ID_MAMI',
+          '"eyJpdiI6ImMyeGxOMlExYUdRd1pXRjZOM053YlE9PSIsInZhbHVlIjoiTFBCZzZtNWxSVUp3ZStGdmRaNHg3N01vY2QxYnhRMGJNQVJOTm5sbVVKY3d1NlJpSUdXNnhQZXNTVnBxMVZTdCIsIm1hYyI6IjM4NTA4NDZlNjU0ODE0N2MwNjI4ZmZlNDgxNWYwY2JlIn0="'
+      buildConfigField "Boolean", "DEBUG_MODE", "true"
+      applicationIdSuffix ".dev"
+      versionNameSuffix "-dev"
+      resValue "string", "dompet_sehat", "(DEV) Dompetsehat"
+    }
+    release {
+      debuggable true
+      minifyEnabled true
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+      buildConfigField 'String', 'SERVER_URL',
+          '"eyJpdiI6ImNEaGhjM0Z1YVdwdU4zazBhbUZxY2c9PSIsInZhbHVlIjoiU0IxeVJBOEZXekJJNVZmRjVhK1FDUndjelM5M3pxdW82OHZnODJLMlJrND0iLCJtYWMiOiIzYzM4MGJkMzFjNDExODFiZmFiNjA3YTY3YzBlNjhiNyJ9"'
+      buildConfigField 'String', 'URL_MAMI',
+          '"eyJpdiI6ImF6ZGlZekJ5WVdZMk5XazBhV001ZVE9PSIsInZhbHVlIjoiXC9TZzl2YXpWUk1xaUh3cHdsSzZ1NGNCdndBY2J5NjUrbkpMRG5jSWhoRkk9IiwibWFjIjoiOWU4ZjcwOTkxNDBmMTkyNDlhZDA2YzU5NzkzZDc5OWUifQ=="'
+      buildConfigField 'String', 'APP_ID_MAMI',
+          '"eyJpdiI6ImNYaGhielJuZG5GdmRUWmlNR0ZzT1E9PSIsInZhbHVlIjoiazlSMk1nUVhxOEdjdGdGQytwRE4ybCtYK01JTUJ6WnY2ZHUrbjZOeHhwVlhoN3phUDFwT0JkRkdod1wvRWl5T2QiLCJtYWMiOiJlNmRhNzYwYjczZjcyMDA2OTkzYjNjN2Y5NjgzNTc0ZCJ9"'
+      buildConfigField "Boolean", "DEBUG_MODE", "false"
+      resValue "string", "dompet_sehat", "Dompetsehat"
+      signingConfig signingConfigs.config
+    }
+  }
+  lintOptions {
+    disable 'MissingTranslation'
+  }
+  packagingOptions {
+    exclude 'META-INF/BCKEY.SF'
+    exclude 'META-INF/BCKEY.DSA'
+    exclude 'META-INF/DEPENDENCIES'
+    exclude 'META-INF/NOTICE'
+    exclude 'META-INF/LICENSE'
+    exclude 'META-INF/LICENSE.txt'
+    exclude 'META-INF/NOTICE.txt'
+  }
+  compileOptions {
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+  }
+}
+
+dependencies {
+  compile fileTree(include: ['*.jar'], dir: 'libs')
+  compile files('libs/Parse-1.11.0.jar')
+  apt 'com.google.dagger:dagger-compiler:2.5'
+  compile 'com.google.dagger:dagger:2.5'
+  provided 'javax.annotation:jsr250-api:1.0'
+  compile 'com.android.support:support-annotations:25.2.0'
+  compile('com.crashlytics.sdk.android:crashlytics:2.6.5@aar') {
+    transitive = true;
+  }
+  compile files('libs/bolts-tasks-1.3.0.jar')
+  compile 'com.squareup.okhttp3:okhttp:3.4.1'
+  compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+  compile 'com.squareup.retrofit2:retrofit:2.1.0'
+  compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+  compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+  compile 'com.jakewharton.retrofit:retrofit1-okhttp3-client:1.0.2'
+  compile 'com.google.android.gms:play-services-gcm:10.0.1'
+  compile 'com.google.android.gms:play-services-basement:10.0.1'
+  compile 'com.google.android.gms:play-services-analytics:10.0.1'
+  compile 'com.google.android.gms:play-services-location:10.0.1'
+  compile 'com.google.android.gms:play-services-places:10.0.1'
+  compile 'com.google.firebase:firebase-core:10.0.1'
+  compile 'com.google.firebase:firebase-messaging:10.0.1'
+  compile 'com.google.firebase:firebase-auth:10.0.1'
+  compile 'com.google.firebase:firebase-database:10.0.1'
+  compile 'com.google.firebase:firebase-storage:10.0.1'
+  compile 'com.mikepenz:community-material-typeface:1.7.22.1@aar'
+  compile 'com.mikepenz:google-material-typeface:2.2.0.3.original@aar'
+  compile 'com.mikepenz:iconics-core:2.8.1@aar'
+  compile 'com.makeramen:roundedimageview:2.2.1'
+  /*APP COMPAT SUPPORT*/
+  compile 'com.android.support:recyclerview-v7:25.2.0'
+  compile 'com.android.support:support-v4:25.2.0'
+  compile 'com.android.support:appcompat-v7:25.2.0'
+  compile 'com.android.support:cardview-v7:25.2.0'
+  compile 'com.android.support:design:25.2.0'
+  compile 'com.android.support:multidex:1.0.1'
+  compile 'com.itextpdf:itextpdf:5.3.2'
+  compile 'com.itextpdf.tool:xmlworker:5.4.1'
+  compile 'net.sourceforge.jexcelapi:jxl:2.6'
+  compile('com.facebook.android:facebook-android-sdk:4.14.0') {
+    exclude module: 'bolts-android'
+  }
+  compile 'com.facebook.android:account-kit-sdk:4.14.0'
+  compile 'com.jakewharton.timber:timber:4.1.2'
+  compile 'com.jakewharton:butterknife:7.0.1'
+  compile 'io.reactivex:rxjava:1.1.8'
+  compile 'io.reactivex:rxandroid:1.2.1'
+  /*compiled project*/
+  compile project(':materialEditText')
+  compile project(':slideDateTimePicker')
+  compile('com.github.VictorAlbertos:RxCache:1.2.6') {
+    exclude module: 'guava'
+  }
+  compile 'com.afollestad:sectioned-recyclerview:0.2.3'
+  compile 'com.bignerdranch.android:expandablerecyclerview:2.1.1'
+  compile 'com.github.lecho:hellocharts-library:1.5.8@aar'
+  compile 'com.hbb20:ccp:1.5.1'
+  compile 'com.diogobernardino:williamchart:2.2'
+  compile 'com.github.ybq:Android-SpinKit:1.1.0'
+  compile 'uk.co.chrisjenx:calligraphy:2.2.0'
+  compile 'com.squareup.picasso:picasso:2.5.2'
+  compile 'com.wang.avi:library:2.1.3'
+  compile 'com.theartofdev.edmodo:android-image-cropper:2.3.+'
+  //smooch
+  compile 'io.smooch:core:latest.release'
+  compile 'io.smooch:ui:latest.release'
+  compile 'net.sf.opencsv:opencsv:2.3'
+  compile 'com.googlecode.libphonenumber:libphonenumber:5.5'
+  compile 'com.nispok:snackbar:2.6.1'
+  compile 'org.zakariya.stickyheaders:stickyheaders:0.7.5'
+  compile 'com.github.toanvc:floatingactionmenu:0.8.9'
+  compile 'com.evernote:android-job:1.1.3'
+  compile 'jp.wasabeef:blurry:2.1.0'
+  compile 'com.github.delight-im:Android-AdvancedWebView:v3.0.0'
+  compile('com.github.worker8:tourguide:1.0.17-SNAPSHOT@aar') {
+    transitive = true
+  }
+  compile 'com.github.halysongoncalves:pugnotification:1.8.1'
+  compile 'com.kelvinapps:rxfirebase:0.0.15'
+  //  compile 'com.google.firebase:firebase-crash:10.2.0'
+}
+apply plugin: 'com.google.gms.google-services'

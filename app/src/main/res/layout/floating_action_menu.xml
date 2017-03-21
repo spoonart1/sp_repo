@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+  <View
+      android:id="@+id/splash_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:visibility="gone"
+      android:background="@color/white_transparent_80"
+      />
+  <toan.android.floatingactionmenu.FloatingActionsMenu
+      android:id="@+id/floating_action_menu"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_gravity="bottom|right"
+      android:layout_margin="@dimen/padding_size_medium"
+      android:orientation="vertical"
+      app:fab_addButtonColorNormal="@color/green_dompet_ori"
+      app:fab_addButtonColorPressed="@color/green_darker"
+      app:fab_labelStyle="@style/menu_labels_style"
+      app:fab_menuIcon="@drawable/ic_add_white_48dp"
+      >
+
+    <toan.android.floatingactionmenu.FloatingActionButton
+        android:id="@+id/fab_add_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        app:fab_colorNormal="#c566ef"
+        app:fab_colorPressed="#944bb4"
+        app:fab_colorDisabled="#c566ef"
+        app:fab_icon="@drawable/ic_action_icon_akun"
+        app:fab_size="mini"
+        app:fab_title="@string/add_account"
+        />
+
+    <toan.android.floatingactionmenu.FloatingActionButton
+        android:id="@+id/fab_add_plan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        app:fab_colorNormal="#00c8a2"
+        app:fab_colorPressed="#00af8e"
+        app:fab_colorDisabled="#00c8a2"
+        app:fab_icon="@drawable/ic_action_icon_rencana"
+        app:fab_size="mini"
+        app:fab_title="@string/add_plan"
+        />
+
+    <toan.android.floatingactionmenu.FloatingActionButton
+        android:id="@+id/fab_add_budget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        app:fab_colorNormal="#f99406"
+        app:fab_colorPressed="#bf7001"
+        app:fab_colorDisabled="#f99406"
+        app:fab_icon="@drawable/ic_action_icon_anggaran"
+        app:fab_size="mini"
+        app:fab_title="@string/add_budget"
+        />
+
+    <toan.android.floatingactionmenu.FloatingActionButton
+        android:id="@+id/fab_add_transaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        app:fab_colorNormal="#3699dc"
+        app:fab_colorPressed="#2f87c2"
+        app:fab_colorDisabled="#3699dc"
+        app:fab_icon="@drawable/ic_action_icon_transaksi"
+        app:fab_size="mini"
+        app:fab_title="@string/add_transaction"
+        />
+
+  </toan.android.floatingactionmenu.FloatingActionsMenu>
+</FrameLayout>

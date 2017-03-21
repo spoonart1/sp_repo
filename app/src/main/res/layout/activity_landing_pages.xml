@@ -1,0 +1,259 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+  <ViewFlipper
+      android:id="@+id/viewflipper"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_background_1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:scaleType="centerCrop"-->
+    <!--android:src="@drawable/bg_intro_1"-->
+    <!--/>-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_background_2"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:scaleType="centerCrop"-->
+    <!--android:src="@drawable/bg_intro_2"-->
+    <!--/>-->
+
+    <ImageView
+        android:id="@+id/iv_background_3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_intro1"
+        />
+
+
+  </ViewFlipper>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      >
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo_ds"
+        android:tint="@color/green_dompet_ori"
+        />
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button_fb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+
+    <javasign.com.dompetsehat.view.CirclePageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/padding_size_medium"
+        android:padding="@dimen/padding_size_small"
+        app:fillColor="@color/green_dompet_ori"
+        app:pageColor="@color/grey_600"
+        app:radius="3dp"
+        app:strokeColor="@color/transparant"
+        app:strokeWidth="0.7dp"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:orientation="vertical"
+          android:paddingBottom="@dimen/padding_root_layout"
+          >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_root_layout"
+            android:layout_marginRight="@dimen/padding_root_layout"
+            android:layout_marginTop="@dimen/padding_size_medium"
+            android:orientation="horizontal"
+            >
+
+          <Button
+              android:id="@+id/btn_login"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:background="@drawable/button_rounded_transparent_green_outline"
+              android:stateListAnimator="@null"
+              android:text="Login"
+              android:textAllCaps="false"
+              android:textColor="@color/white"
+              />
+
+          <View
+              android:layout_width="@dimen/padding_size_medium"
+              android:layout_height="match_parent"
+              />
+
+          <Button
+              android:id="@+id/btn_daftar"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:background="@drawable/button_rounded_transparent_green_outline"
+              android:stateListAnimator="@null"
+              android:text="Sign Up"
+              android:textAllCaps="false"
+              android:textColor="@color/white"
+              />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_root_layout"
+            android:layout_marginRight="@dimen/padding_root_layout"
+            android:layout_marginTop="@dimen/padding_size_medium"
+            android:orientation="horizontal"
+            >
+
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/line_divider_size"
+              android:layout_gravity="center"
+              android:layout_weight="1"
+              android:background="@color/grey_600"
+              />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:paddingLeft="@dimen/padding_size_medium"
+              android:paddingRight="@dimen/padding_size_medium"
+              android:text="@string/or"
+              />
+
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/line_divider_size"
+              android:layout_gravity="center"
+              android:layout_weight="1"
+              android:background="@color/grey_600"
+              />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_size_small"
+            android:layout_marginLeft="@dimen/padding_root_layout"
+            android:layout_marginRight="@dimen/padding_root_layout"
+            android:layout_marginTop="@dimen/padding_size_small"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+          <Button
+              android:id="@+id/btn_facebook"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/button_facebook_theme"
+              android:elevation="0dp"
+              android:stateListAnimator="@null"
+              />
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              android:gravity="center"
+              android:orientation="horizontal"
+              >
+
+            <com.mikepenz.iconics.view.IconicsTextView
+                android:id="@+id/iconicsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="{dsf-fb}"
+                android:textColor="@color/white"
+                android:textSize="@dimen/huge_text_size"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_size_medium"
+                android:text="@string/login_with_facebook"
+                android:textColor="@color/white"
+                />
+
+          </LinearLayout>
+
+        </FrameLayout>
+
+      </LinearLayout>
+
+    </FrameLayout>
+
+  </LinearLayout>
+
+  <View
+      android:id="@+id/splash_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:alpha="0"
+      android:background="@color/black"
+      android:visibility="gone"
+      />
+
+  <include layout="@layout/landing_footer_menu"/>
+
+  <com.mikepenz.iconics.view.IconicsTextView
+      android:id="@+id/btn_help"
+      android:layout_width="@dimen/ds_button_dialog_height"
+      android:layout_height="@dimen/ds_button_dialog_height"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentTop="true"
+      android:layout_marginRight="@dimen/padding_size_high"
+      android:layout_marginTop="@dimen/padding_root_layout"
+      android:background="@drawable/button_orange_oval"
+      android:elevation="@dimen/normal_elevation"
+      android:gravity="center"
+      android:text="{dsf-help}"
+      android:textColor="@color/white"
+      android:textSize="@dimen/huge_text_size"
+      />
+
+</RelativeLayout>

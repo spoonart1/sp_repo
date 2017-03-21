@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ds_action_bar_size"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    >
+
+  <com.mikepenz.iconics.view.IconicsButton
+      android:id="@+id/btn_cancel"
+      android:layout_width="@dimen/ds_action_bar_size"
+      android:layout_height="@dimen/ds_action_bar_size"
+      android:gravity="center"
+      android:text="{dsf-arrow-back}"
+      android:textColor="@color/white"
+      android:textSize="@dimen/huge_text_size"
+      style="@style/Widget.AppCompat.ActionButton"
+      />
+
+  <TextView
+      android:id="@+id/tv_title"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:padding="@dimen/padding_size_medium"
+      android:text="title here ..."
+      android:textColor="@color/white"
+      android:textSize="@dimen/normal_text_size"
+      />
+
+  <com.mikepenz.iconics.view.IconicsButton
+      android:id="@+id/btn_rename"
+      android:layout_width="@dimen/ds_action_bar_size"
+      android:layout_height="@dimen/ds_action_bar_size"
+      android:gravity="center"
+      android:text="{dsf-faqs}"
+      android:textColor="@color/white"
+      android:visibility="gone"
+      android:textSize="@dimen/huge_text_size"
+      style="@style/Widget.AppCompat.ActionButton"
+      />
+
+  <com.mikepenz.iconics.view.IconicsButton
+      android:id="@+id/btn_edit"
+      android:layout_width="@dimen/ds_action_bar_size"
+      android:layout_height="@dimen/ds_action_bar_size"
+      android:gravity="center"
+      android:text="{dsf-edit}"
+      android:textColor="@color/white"
+      android:textSize="@dimen/huge_text_size"
+      style="@style/Widget.AppCompat.ActionButton"
+      />
+
+  <com.mikepenz.iconics.view.IconicsButton
+      android:id="@+id/btn_delete"
+      android:layout_width="@dimen/ds_action_bar_size"
+      android:layout_height="@dimen/ds_action_bar_size"
+      android:gravity="center"
+      android:text="{dsf-delete-all}"
+      android:textColor="@color/white"
+      android:textSize="@dimen/huge_text_size"
+      style="@style/Widget.AppCompat.ActionButton"
+      />
+
+</LinearLayout>

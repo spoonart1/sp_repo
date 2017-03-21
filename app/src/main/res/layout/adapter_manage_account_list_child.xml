@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_size_tiny"
+        android:background="@color/gray_50"
+        android:elevation="@dimen/normal_elevation">
+        <com.mikepenz.iconics.view.IconicsButton
+            android:id="@+id/ib_menu"
+            android:gravity="center"
+            android:focusable="false"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/circle_icon_text_size"
+            android:layout_width="@dimen/button_height"
+            android:layout_height="@dimen/button_height"
+            android:background="@drawable/button_gray_50"
+            android:textColor="@color/grey_800"
+            android:text="{gmd-more-vert}"/>
+    <LinearLayout
+        android:layout_toLeftOf="@id/ib_menu"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+        <javasign.com.dompetsehat.utils.CircleShapeView
+            android:id="@+id/csv_product"
+            android:padding="@dimen/padding_size_high"
+            android:layout_marginLeft="@dimen/padding_size_medium"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/circle_icon"
+            android:layout_height="@dimen/circle_icon"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/padding_size_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_account_name"
+                    android:text="Wallet"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_account_balance"
+                    android:text="Rp 10.000.000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+</LinearLayout>

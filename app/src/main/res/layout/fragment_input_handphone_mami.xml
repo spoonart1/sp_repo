@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/padding_size_high"
+    >
+
+  <TextView
+      android:layout_marginTop="@dimen/padding_size_medium"
+      android:text="@string/phone_number_short"
+      android:layout_marginLeft="@dimen/padding_size_high"
+      android:textAllCaps="true"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="@dimen/small_text_size"
+      android:textColor="@color/green_dompet_ori"
+      />
+
+  <EditText
+      android:id="@+id/et_field"
+      android:layout_width="match_parent"
+      android:layout_height="44dp"
+      android:textColor="@color/grey_800"
+      android:inputType="phone"
+      android:background="@drawable/shape_rect_stroke"
+      android:paddingLeft="@dimen/padding_size_small"
+      android:layout_marginTop="@dimen/padding_size_small"
+      android:layout_marginLeft="@dimen/padding_size_high"
+      android:layout_marginRight="@dimen/padding_size_high"
+      />
+
+  <Button
+      android:id="@+id/btn_next"
+      android:text="@string/selanjutnya"
+      android:textAllCaps="false"
+      android:layout_width="match_parent"
+      android:layout_height="44dp"
+      android:enabled="false"
+      android:textColor="@color/text_button_selector_orange"
+      android:layout_margin="@dimen/padding_root_layout"
+      android:stateListAnimator="@null"
+      android:background="@drawable/button_rounded_orange_send_stroked"
+      />
+
+
+</LinearLayout>

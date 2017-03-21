@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!--Whats new ??-->
+  <!--Format : -->
+  <!--Version Off the App-->
+  <!--Change log version-->
+
+  <string name="log_history" translatable="false"><![CDATA[<u><b>Versi 1.7.4.28</b></u>
+    <p>\u2022 Penambahan fitur notifikasi
+    <p>\u2022 Penambahan fitur kartu kredit ketika rekening bank kamu memiliki kartu kredit
+    <p>\u2022 Penambahan fitur berbagi data ke aplikasi DS Go
+    <p>\u2022 Beberapa perbaikan minor
+  ]]></string>
+
+</resources>

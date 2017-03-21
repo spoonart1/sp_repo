@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <!--
+ //created by spoonart, XenixCorp.
+ add <Badge> -content- </Badge> to create a new Badge achievement
+ NOTE:
+ 1. dont forget to set <id></id> for each <Badge>, should be unique
+ 2. dont forget to update <version> when uploading the file.
+ -->
+<VERYFUND>
+    <version>1</version>
+    <Badge>
+        <id>0</id>
+        <title>Beginner's luck</title>
+        <drawable>beginner</drawable>
+        <firstbar titlein="Saldo" min="1" max="100000"/>
+        <secondbar titlein="Transaction" min="0" max="25"/>
+    </Badge>
+    <Badge>
+        <id>1</id>
+        <title>First Runner</title>
+        <drawable>first_runner</drawable>
+        <firstbar titlein="Saldo" min="2" max="250000"/>
+        <secondbar titlein="Transaction" min="0" max="50"/>
+    </Badge>
+    <Badge>
+        <id>2</id>
+        <title>Baby Dragon</title>
+        <drawable>baby_dragon</drawable>
+        <firstbar titlein="Saldo" min="3" max="500000"/>
+        <secondbar titlein="Transaction" min="0" max="100"/>
+    </Badge>
+    <Badge>
+        <id>3</id>
+        <title>Cash Ninja</title>
+        <drawable>cash_ninja</drawable>
+        <firstbar titlein="Saldo" min="4" max="750000"/>
+        <secondbar titlein="Transaction" min="0" max="200"/>
+    </Badge>
+    <Badge>
+            <id>4</id>
+            <title>King Pin</title>
+            <drawable>king_pin</drawable>
+            <firstbar titlein="Saldo" min="5" max="1000000"/>
+            <secondbar titlein="Transaction" min="0" max="400"/>
+    </Badge>
+    <Badge>
+            <id>5</id>
+            <title>Gold Digger</title>
+            <drawable>gold_digger</drawable>
+            <firstbar titlein="Saldo" min="6" max="2500000"/>
+            <secondbar titlein="Transaction" min="0" max="800"/>
+    </Badge>
+    <Badge>
+            <id>6</id>
+            <title>Master of Coins</title>
+            <drawable>master_of_coin</drawable>
+            <firstbar titlein="Saldo" min="7" max="5000000"/>
+            <secondbar titlein="Transaction" min="0" max="1500"/>
+    </Badge>
+    <Badge>
+            <id>7</id>
+            <title>Iron Bank of Bravoos</title>
+            <drawable>iron_bank</drawable>
+            <firstbar titlein="Saldo" min="8" max="10000000"/>
+            <secondbar titlein="Transaction" min="0" max="3000"/>
+    </Badge>
+    <Badge>
+            <id>8</id>
+            <title>Colombian Cartel</title>
+            <drawable>colombian_cartel</drawable>
+            <firstbar titlein="Saldo" min="9" max="50000000"/>
+            <secondbar titlein="Transaction" min="0" max="6000"/>
+    </Badge>
+    <Badge>
+        <id>9</id>
+        <title>The Godfather</title>
+        <drawable>godfather</drawable>
+        <firstbar titlein="Saldo" min="10" max="100000000"/>
+        <secondbar titlein="Transaction" min="0" max="10000"/>
+    </Badge>
+</VERYFUND>

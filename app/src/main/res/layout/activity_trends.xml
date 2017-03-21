@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+  <include layout="@layout/simple_small_action_bar_back_and_search"/>
+
+  <android.support.design.widget.TabLayout
+      android:id="@+id/tablayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/grey_200"
+      app:tabIndicatorColor="@android:color/transparent"
+      app:tabMode="scrollable"
+      app:tabSelectedTextColor="@color/green_dompet_ori"
+      app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+      app:tabTextColor="@color/grey_400"
+      />
+
+  <android.support.v4.view.ViewPager
+      android:id="@+id/pager"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      />
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/line_divider_size"
+      android:background="@color/grey_200"
+      />
+
+  <RadioGroup
+      android:id="@+id/radio_group"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      >
+
+    <RadioButton
+        android:id="@+id/byOverall"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ds_action_bar_size"
+        android:layout_weight="1"
+        android:button="@null"
+        android:checked="true"
+        android:gravity="center"
+        android:text="@string/date"
+        android:textAllCaps="true"
+        android:textColor="@color/rb_text_color_selector_grey"
+        />
+
+    <View
+        android:layout_width="@dimen/line_divider_size"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/padding_size_small"
+        android:layout_marginTop="@dimen/padding_size_small"
+        android:background="@color/grey_200"
+        />
+
+    <RadioButton
+        android:id="@+id/byCategory"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ds_action_bar_size"
+        android:layout_weight="1"
+        android:button="@null"
+        android:gravity="center"
+        android:text="@string/category"
+        android:textAllCaps="true"
+        android:textColor="@color/rb_text_color_selector_grey"
+        />
+
+  </RadioGroup>
+
+</LinearLayout>

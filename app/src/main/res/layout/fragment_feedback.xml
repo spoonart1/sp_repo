@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+  <ScrollView
+      android:layout_below="@id/v_divider"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:fillViewport="true"
+      >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="@dimen/padding_size_high"
+          android:layout_marginRight="@dimen/padding_size_high"
+          android:layout_marginTop="@dimen/padding_size_medium"
+          android:text="@string/subject"
+          android:textSize="@dimen/average_text_size"
+          />
+
+      <LinearLayout
+          android:id="@+id/radio_group"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:padding="@dimen/padding_size_medium"
+          >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+          <RadioButton
+              android:id="@+id/rb_bug"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:button="@null"
+              android:gravity="center"
+              android:text="B"
+              android:textColor="@color/rb_text_color_selector_green"
+              android:textSize="@dimen/circle_icon"
+              />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/bug"
+              />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/line_divider_size"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/padding_size_high"
+            android:background="@color/grey_200"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+          <RadioButton
+              android:id="@+id/rb_info"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:button="@null"
+              android:gravity="center"
+              android:text="I"
+              android:textColor="@color/rb_text_color_selector_green"
+              android:textSize="@dimen/circle_icon"
+              />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/information"
+              />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/line_divider_size"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/padding_size_high"
+            android:background="@color/grey_200"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+          <RadioButton
+              android:id="@+id/rb_feature"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:button="@null"
+              android:gravity="center"
+              android:text="F"
+              android:textColor="@color/rb_text_color_selector_green"
+              android:textSize="@dimen/circle_icon"
+              />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/feature"
+              />
+        </LinearLayout>
+
+      </LinearLayout>
+
+      <TextView
+          android:visibility="gone"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="@dimen/padding_size_high"
+          android:layout_marginRight="@dimen/padding_size_high"
+          android:layout_marginTop="@dimen/padding_root_layout"
+          android:text="@string/title"
+          android:textSize="@dimen/average_text_size"
+          />
+
+      <com.rengwuxian.materialedittext.MaterialEditText
+          android:visibility="gone"
+          android:id="@+id/et_title"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="@dimen/padding_size_high"
+          android:layout_marginRight="@dimen/padding_size_high"
+          android:layout_marginTop="@dimen/padding_size_tiny"
+          android:maxLines="1"
+          android:textSize="@dimen/normal_text_size"
+          app:met_floatingLabel="none"
+          app:met_floatingLabelAlwaysShown="false"
+          app:met_primaryColor="@color/grey_800"
+          />
+
+      <TextView
+          android:id="@+id/label"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="@dimen/padding_size_high"
+          android:layout_marginRight="@dimen/padding_size_high"
+          android:layout_marginTop="@dimen/padding_root_layout"
+          android:text="@string/message"
+          android:textSize="@dimen/average_text_size"
+          />
+
+      <EditText
+          android:id="@+id/et_msg"
+          android:layout_width="match_parent"
+          android:layout_height="150dp"
+          android:layout_marginLeft="@dimen/padding_size_high"
+          android:layout_marginRight="@dimen/padding_size_high"
+          android:layout_marginTop="@dimen/padding_size_medium"
+          android:background="@drawable/shape_rect_stroke"
+          android:gravity="top"
+          android:padding="@dimen/padding_size_small"
+          />
+
+      <Button
+          android:id="@+id/btn_send"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:layout_marginLeft="@dimen/padding_root_layout_twice"
+          android:layout_marginRight="@dimen/padding_root_layout_twice"
+          android:layout_marginTop="@dimen/padding_root_layout_twice"
+          android:background="@drawable/button_rounded_orange_send_stroked"
+          android:enabled="false"
+          android:stateListAnimator="@null"
+          android:text="@string/send"
+          android:textAllCaps="false"
+          android:textColor="@color/text_button_selector_orange"
+          />
+
+    </LinearLayout>
+  </ScrollView>
+
+</LinearLayout>

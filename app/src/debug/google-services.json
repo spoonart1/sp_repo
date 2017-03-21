@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "472065954601",
+    "firebase_url": "https://dsdev-d9744.firebaseio.com",
+    "project_id": "dsdev-d9744",
+    "storage_bucket": "dsdev-d9744.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:472065954601:android:98188c0d6b01b6ad",
+        "android_client_info": {
+          "package_name": "javasign.com.dompetsehat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "472065954601-79qsqu04m51ac7736jjgnp19n9b7g5fr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOF3FoWo3VzV2jmCFLkRZbvDXV39jOZ40"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:472065954601:android:4379ae968d6f6441",
+        "android_client_info": {
+          "package_name": "javasign.com.dompetsehat.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "472065954601-79qsqu04m51ac7736jjgnp19n9b7g5fr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOF3FoWo3VzV2jmCFLkRZbvDXV39jOZ40"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

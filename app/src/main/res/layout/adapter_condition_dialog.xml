@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_size_medium"
+    >
+
+  <TextView
+      android:id="@+id/tv_numbering"
+      android:layout_marginLeft="@dimen/padding_size_small"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="1."
+      />
+
+  <TextView
+      android:id="@+id/tv_desc"
+      android:layout_marginLeft="@dimen/padding_size_small"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/lorem_ipsum"
+      />
+
+</LinearLayout>

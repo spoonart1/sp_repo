@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    >
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_vertical"
+      android:orientation="horizontal"
+      android:padding="@dimen/padding_size_small"
+      android:background="?attr/actionBarItemBackground"
+      >
+    <ImageView
+        android:id="@+id/badges_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/beginner"
+        />
+    <TextView
+        android:id="@+id/tv_badges_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_size_medium"
+        android:layout_weight="1"
+        android:text="Beginner's Luck"
+        android:textSize="@dimen/bigger_text_size"
+        />
+    <com.mikepenz.iconics.view.IconicsTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="{dsf-check}"
+        android:textColor="@color/green_dompet_ori"
+        android:textSize="@dimen/big_text_size"
+        />
+  </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/simple_blank_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+  <com.mikepenz.iconics.view.IconicsTextView
+      android:id="@+id/icon"
+      android:layout_width="@dimen/circle_photo_size"
+      android:layout_height="@dimen/circle_photo_size"
+      android:layout_gravity="center"
+      android:gravity="center"
+      android:text="{dsf-plus-circle}"
+      android:textColor="@color/blue_grey_300"
+      android:textSize="@dimen/circle_icon"
+      android:background="@drawable/button_white_oval"
+      />
+
+  <TextView
+      android:id="@+id/tv_desc"
+      android:gravity="center"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/no_transaction"
+      android:layout_margin="@dimen/padding_size_medium"
+      />
+
+</LinearLayout>

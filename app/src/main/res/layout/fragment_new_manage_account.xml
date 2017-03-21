@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+  <android.support.design.widget.AppBarLayout
+      android:id="@+id/appbar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+      app:elevation="0dp"
+      >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_scrollFlags="scroll|enterAlways|snap"
+        >
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/header_content_height"
+          android:background="@color/grey_200"
+          android:orientation="vertical"
+          >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_size_high"
+            android:layout_marginRight="@dimen/padding_size_high"
+            android:layout_marginTop="@dimen/padding_size_high"
+            android:text="@string/my_account"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_size_high"
+            android:layout_marginRight="@dimen/padding_size_high"
+            android:layout_marginTop="@dimen/padding_size_high"
+            android:orientation="horizontal"
+            >
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:text="@string/total_account"
+              />
+
+          <TextView
+              android:id="@+id/tv_total_account"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="3"
+              />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_divider_size"
+            android:layout_marginTop="@dimen/padding_size_medium"
+            android:background="@color/grey_400"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_size_high"
+            android:layout_marginRight="@dimen/padding_size_high"
+            android:layout_marginTop="@dimen/padding_size_high"
+            android:orientation="horizontal"
+            >
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:text="@string/balances"
+              />
+
+          <TextView
+              android:id="@+id/tv_total"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Rp 0"
+              />
+
+        </LinearLayout>
+
+      </LinearLayout>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:paddingBottom="@dimen/padding_size_medium"
+          android:paddingLeft="@dimen/padding_size_high"
+          android:paddingRight="@dimen/padding_size_high"
+          android:paddingTop="@dimen/padding_size_high"
+          android:text="@string/list_of_account"
+          android:textStyle="bold"
+          />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_divider_size"
+        android:background="@color/grey_200"
+        />
+
+  </android.support.design.widget.AppBarLayout>
+
+  <android.support.v4.widget.SwipeRefreshLayout
+      android:id="@+id/refresh_layout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:layout_behavior="@string/appbar_scrolling_view_behavior"
+      >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+  </android.support.v4.widget.SwipeRefreshLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="@dimen/padding_root_layout"
+      android:layout_marginBottom="@dimen/padding_size_high"
+      android:gravity="center"
+      android:text="@string/final_registration_mami_with_laptop"
+      android:textSize="@dimen/huge_text_size"
+      />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:padding="@dimen/padding_size_medium"
+      >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1."
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_size_medium"
+        android:text="@string/final_registration_mami_with_laptop_step_1"
+        />
+
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_marginTop="@dimen/padding_size_medium"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:padding="@dimen/padding_size_medium"
+      >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2."
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_size_medium"
+        android:text="@string/final_registration_mami_with_laptop_step_2"
+        />
+
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_marginTop="@dimen/padding_size_medium"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:padding="@dimen/padding_size_medium"
+      >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3."
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_size_medium"
+        android:text="@string/final_registration_mami_with_laptop_step_3"
+        />
+
+
+  </LinearLayout>
+
+
+  <Button
+      android:id="@+id/btn_close"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/ds_action_bar_size"
+      android:layout_marginTop="@dimen/padding_size_high"
+      android:layout_marginLeft="@dimen/padding_size_high"
+      android:layout_marginRight="@dimen/padding_size_high"
+      android:background="@drawable/button_manulife_template"
+      android:stateListAnimator="@null"
+      android:text="@string/back"
+      android:textAllCaps="false"
+      android:textColor="@color/green_manulife"
+      />
+
+</LinearLayout>
