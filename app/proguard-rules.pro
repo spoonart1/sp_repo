@@ -124,6 +124,8 @@
 -keep public class com.evernote.android.job.v14.PlatformAlarmReceiver
 -keep public class com.evernote.android.job.JobBootReceiver
 
+-dontwarn com.appsflyer.AFKeystoreWrapper
+
 
 
 #-keep class javasign.com.dompetsehat.ui.*** { *; }
