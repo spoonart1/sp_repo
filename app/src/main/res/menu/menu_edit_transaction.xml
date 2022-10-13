@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/mn_edit"
-        android:title="@string/edit_title"/>
-    <item android:id="@+id/mn_place"
-        android:title="@string/get_from_place"/>
-</menu>

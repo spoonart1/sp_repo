@@ -1,5 +1,5 @@
 # sp_repo
 Projects of mine
 
-### gradle script list all libraries : 
-```-q dependencies app:dependencies --configuration debugAndroidTestCompileClasspath```
+### Flutter Netflix Clone App : 
+https://github.com/spoonart1/netflix_clone_flutter
